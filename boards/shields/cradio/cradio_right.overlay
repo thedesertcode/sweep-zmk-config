@@ -13,7 +13,8 @@ asdlfjksdkfj::;;;1
 
 / {
     &kscan {
-        compatible = "zmk,kscan-gpio-direct";
+        compatible = "zmk,kscan-gpio-directsdfsdfll";
+sfdasdf
         debounce-press-ms = <0>;                        
         debounce-release-ms = <0>;
         debounce-scan-period-ms = <1>;
