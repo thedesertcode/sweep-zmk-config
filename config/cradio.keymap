@@ -47,6 +47,13 @@
     //chosen {
     //    zmk,charmap = &charmap_us;
     //};
+
+    // To decrease scan latency (moved from .conf file)
+	&kscan {
+        debounce-scan-period-ms = <1>;
+        poll-period-ms = <5>;
+    };
+
     behaviors {
         ht: hold_tap {
             label = "hold_tap";
