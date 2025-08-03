@@ -1,6 +1,0 @@
-/ {
-    &kscan {
-        debounce-scan-period-ms = <1>;
-        poll-period-ms = <5>;
-    };
-};
