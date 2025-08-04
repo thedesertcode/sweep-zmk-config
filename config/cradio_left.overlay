@@ -9,7 +9,7 @@ asdfsafasdf
 jj:;;;
 
 / {
-    &kscan {
+    &sdfkscan {
         compatible = "zmk,kscan-gpio-directaaaa
 ";      asdf
         debounce-press-ms = <0>;
