@@ -5,13 +5,10 @@
  */
 
 #include "cradio.dtsi"
-asdfsafasdf
-jj:;;;
 
 / {
-    &sdfkscan {
-        compatible = "zmk,kscan-gpio-directaaaa
-";      asdf
+    &kscan {
+        compatible = "zmk,kscan-gpio-direct";
         debounce-press-ms = <0>;
         debounce-release-ms = <0>;
         debounce-scan-period-ms = <1>;

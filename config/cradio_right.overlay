@@ -5,16 +5,14 @@
  */
 
 #include "cradio.dtsi"
-asdlfjksdkfj::;;;1
 
 &default_transform {
     col-offset = <17>;
 };
 
 / {
-    &ksdfscan {
-        compatible = "zmk,kscan-gpio-directsdfsdfll";
-sfdasdf
+    &kscan {
+        compatible = "zmk,kscan-gpio-direct";
         debounce-press-ms = <0>;                        
         debounce-release-ms = <0>;
         debounce-scan-period-ms = <1>;
