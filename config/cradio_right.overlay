@@ -10,8 +10,7 @@
     col-offset = <17>;
 };
 
-&kscan {
-    compatible = "zmk,kscan-gpio-direct";
+&kscan0 {
     debounce-press-ms = <0>;                        
     debounce-release-ms = <0>;
     debounce-scan-period-ms = <1>;
