@@ -17,8 +17,8 @@
 #define TRI 4
 #define MOUSE 5
 
-
 // https://zmk.dev/docs/development/hardware-integration/soft-off-setup?advanced-methods=wakeup&kscan-type=dkscan
+
 / {
     keys {
         compatible = "gpio-keys";
