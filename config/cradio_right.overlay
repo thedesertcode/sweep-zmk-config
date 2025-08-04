@@ -12,7 +12,7 @@
 
 &kscan0 {
     debounce-press-ms = <0>;
-    debounce-release-ms = <1>;
+    debounce-release-ms = <0>;
     debounce-scan-period-ms = <1>;
     wakeup-source;
 };
