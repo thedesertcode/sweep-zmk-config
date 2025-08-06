@@ -81,12 +81,12 @@
         };
         batt_both: batt_both {
             compatible = "zmk,behavior-macro";
-            label = "BATT_BOTH";
             bindings = <
                 &batt_l
                 &batt_r
                 &kp ENTER
             >;
+            #binding-cells = <0>;
         };
     };
 
