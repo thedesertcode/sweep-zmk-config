@@ -1,11 +1,3 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
-#include "cradio.dtsi"
-
 &default_transform {
     col-offset = <17>;
 };
@@ -15,11 +7,4 @@
     debounce-release-ms = <5>;
     debounce-scan-period-ms = <1>;
     wakeup-source;
-};
-
-/ {
-    battery_peripheral_0: battery_peripheral_0 {
-        compatible = "zmk,battery-ble-peripheral";
-        status = "okay";
-    };
 };

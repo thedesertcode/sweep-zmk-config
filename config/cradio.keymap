@@ -51,8 +51,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <125>;
+            quick-tap-ms = <75>;
             bindings = <&kp &kp>;
         };
         mmv {
@@ -65,31 +65,6 @@
             time-to-max-speed-ms = <500>;
             delay-ms = <10>;
         };
-/*
-        batt_l: batt_l {
-            compatible = "zmk,behavior-send-string";
-            label = "BATT_L";
-            string = "L:%p%% ";
-            sensor = <&vbatt>;
-            #binding-cells = <0>;
-        };
-        batt_r: batt_r {
-            compatible = "zmk,behavior-send-string";
-            label = "BATT_R";
-            string = "R:%p%%";
-            sensor = <&battery_peripheral_0>;
-            #binding-cells = <0>;
-        };
-        batt_both: batt_both {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &batt_l
-                &batt_r
-                &kp ENTER
-            >;
-        };
-*/
     };
 
     conditional_layers {
