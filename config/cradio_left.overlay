@@ -13,3 +13,10 @@
     debounce-scan-period-ms = <1>;
     wakeup-source;
 };
+
+/ {
+    battery_peripheral_0: battery_peripheral_0 {
+        compatible = "zmk,battery-ble-peripheral";
+        status = "okay";
+    };
+};
