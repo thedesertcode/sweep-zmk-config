@@ -69,7 +69,7 @@
             compatible = "zmk,behavior-send-string";
             label = "BATT_L";
             string = "L:%p%% ";
-            sensor = <&battery_sensor>;
+            sensor = <&vbatt>;
             #binding-cells = <0>;
         };
         batt_r: batt_r {
