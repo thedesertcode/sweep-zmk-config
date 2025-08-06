@@ -65,6 +65,7 @@
             time-to-max-speed-ms = <500>;
             delay-ms = <10>;
         };
+/*
         batt_l: batt_l {
             compatible = "zmk,behavior-send-string";
             label = "BATT_L";
@@ -81,13 +82,14 @@
         };
         batt_both: batt_both {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings = <
                 &batt_l
                 &batt_r
                 &kp ENTER
             >;
-            #binding-cells = <0>;
         };
+*/
     };
 
     conditional_layers {
