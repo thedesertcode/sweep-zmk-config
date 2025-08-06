@@ -10,6 +10,12 @@
     col-offset = <17>;
 };
 
+/ {
+    aliases {
+        battery_peripheral = &vbatt;
+    };
+};
+
 &kscan0 {
     debounce-press-ms = <0>;
     debounce-release-ms = <5>;
