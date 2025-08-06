@@ -83,9 +83,9 @@
             compatible = "zmk,behavior-macro";
             label = "BATT_BOTH";
             bindings = <
-                &batt_l           /* left string  */
-                &batt_r           /* right string */
-                &kp ENTER         /* newline      */
+                &batt_l
+                &batt_r
+                &kp ENTER
             >;
         };
     };
