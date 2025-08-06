@@ -7,6 +7,12 @@
 
 #include "cradio.dtsi"
 
+/ {
+    aliases {
+        battery_peripheral_0 = &vbatt;
+    };
+};
+
 &kscan0 {
     debounce-press-ms = <0>;
     debounce-release-ms = <5>;
