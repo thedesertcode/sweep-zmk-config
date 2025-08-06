@@ -90,7 +90,7 @@
         };
 
         left_layer {
-            display-name = "LEFT (SYMBOLS)";
+            display-name = "LEFT";
             bindings = <
             &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
             &kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &trans       &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
@@ -99,9 +99,8 @@
             >;
         };
 
-
         right_layer {
-            display-name = "RIGHT (NUM & NAVIGATION)";
+            display-name = "RIGHT";
             bindings = <
             &kp N1   &kp N2    &kp N3     &kp N4   &kp N5     &kp N6  &kp N7    &kp N8     &kp N9     &kp N0
             &kp DEL  &kp CAPS  &kp PSCRN  &kp INS  &trans     &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT &trans
@@ -111,7 +110,7 @@
         };
 
         both_layer {     
-            display-name = "BOTH (FUNCTIONS)";
+            display-name = "BOTH";
             bindings = <
             &kp F1    &kp F2    &kp F3    &kp F4    &trans    &trans    &trans    &trans    &kp C_MUTE    &kp C_PREV
             &kp F5    &kp F6    &kp F7    &kp F8    &trans    &trans    &kp C_BRI_UP    &trans    &kp C_VOL_UP    &kp C_PP
