@@ -65,37 +65,29 @@
             time-to-max-speed-ms = <500>;
             delay-ms = <10>;
         };
-
-       /* Left-half battery string, "%p" is replaced by the sensor value   */
-       batt_l: batt_l {
-           compatible = "zmk,behavior-send-string";
-           label = "BATT_L";
-           /* prefix, sensor-value, suffix */
-           string = "L:%p%% ";
-           sensor = <&battery_sensor>;          /* local sensor */
-           #binding-cells = <0>;
-       };
-
-       /* Right-half battery string  */
-       batt_r: batt_r {
-           compatible = "zmk,behavior-send-string";
-           label = "BATT_R";
-           /* the central half already knows the peripheral SoC% */
-           string = "R:%p%%";
-           sensor = <&battery_peripheral_0>;    /* fetched through proxy */
-           #binding-cells = <0>;
-       };
-
-       /* A tiny macro that fires them in sequence then sends Enter */
-       batt_both: batt_both {
-           compatible = "zmk,behavior-macro";
-           label = "BATT_BOTH";
-           bindings = <
-               &batt_l           /* left string  */
-               &batt_r           /* right string */
-               &kp ENTER         /* newline      */
-           >;
-       };
+        batt_l: batt_l {
+            compatible = "zmk,behavior-send-string";
+            label = "BATT_L";
+            string = "L:%p%% ";
+            sensor = <&battery_sensor>;
+            #binding-cells = <0>;
+        };
+        batt_r: batt_r {
+            compatible = "zmk,behavior-send-string";
+            label = "BATT_R";
+            string = "R:%p%%";
+            sensor = <&battery_peripheral_0>;
+            #binding-cells = <0>;
+        };
+        batt_both: batt_both {
+            compatible = "zmk,behavior-macro";
+            label = "BATT_BOTH";
+            bindings = <
+                &batt_l           /* left string  */
+                &batt_r           /* right string */
+                &kp ENTER         /* newline      */
+            >;
+        };
     };
 
     conditional_layers {
