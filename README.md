@@ -24,3 +24,9 @@ TODO:
  * Replace MCU to nice!nano v2
  * Change switches to Ambient Nocturnal (20g)
  * Calibrate Debouncer time
+
+ Improvements:
+ * Delete key on the left side. (Adds ability to delete when using the mouse)
+ * Understand the behavior of Repeat key
+ * Reduce number of layers and combine that have only few functioncs
+ * Pin the layer keys to the opposite side of the holded finger for more move freedom. Because when hold the key and trying to press another key with the same hand, it feels more constrained
