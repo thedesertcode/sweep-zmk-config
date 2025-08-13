@@ -85,7 +85,7 @@
             bindings = <
 &kp HOME    &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp END            &kp ASTERISK  &kp N7   &kp N8  &kp N9  &kp MINUS
 &kp DELETE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp LEFT_SHIFT     &kp SLASH     &kp N4   &kp N5  &kp N6  &kp PLUS
-&kp INS     &kp N1          &kp N2          &kp N3         &kp PRINTSCREEN    &kp KP_CLEAR  &kp N1   &kp N2  &kp N3  &kp ENTER
+&kp INS     &kp LC(C)       &kp N2          &kp LC(V)      &kp PRINTSCREEN    &kp KP_CLEAR  &kp N1   &kp N2  &kp N3  &kp ENTER
                                             &trans         &trans             &kp N0        &kp DOT
             >;
         };
