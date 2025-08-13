@@ -60,18 +60,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        main_layer {
-            display-name = "MAIN";
+        default {
+            display-name = "default";
             bindings = <
-&kp Q  &kp W       &kp E        &kp R           &kp T               &kp Y      &kp U           &kp I        &kp O       &kp P
-&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F      &kp G               &kp H      &ht RGUI J      &ht RCTRL K  &ht RALT L  &kp BACKSPACE
-&kp Z  &kp X       &kp C        &kp V           &kp B               &kp N      &kp M           &kp COMMA    &kp DOT     &kp ENTER
-                                &lt LEFT_L TAB  &ht LSHIFT SPACE    &kp SPACE  &lt RGHT_L TAB
+&kp Q  &kp W       &kp E        &kp R       &kp T               &kp Y        &kp U         &kp I        &kp O       &kp P
+&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F  &kp G               &kp H        &ht RGUI J    &ht RCTRL K  &ht RALT L  &kp BACKSPACE
+&kp Z  &kp X       &kp C        &kp V       &kp B               &kp N        &kp M         &kp COMMA    &kp DOT     &kp ENTER
+                                &lt 2 TAB   &ht LSHIFT SPACE    &lt 7 SPACE  &lt 2 ESCAPE
             >;
         };
 
-        left_layer {
-            display-name = "LEFT";
+        symbols {
+            display-name = "symbols";
             bindings = <
 &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE  &kp TILDE
 &kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &trans       &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON  &kp SEMI
@@ -80,13 +80,13 @@
             >;
         };
 
-        right_layer {
-            display-name = "RIGHT";
+        num_nav {
+            display-name = "num_nav";
             bindings = <
-&kp N1   &kp N2    &kp N3     &kp N4   &kp N5     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0
-&kp DEL  &kp CAPS  &kp PSCRN  &kp INS  &trans     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-&trans   &trans    &trans     &trans   &trans     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-                              &trans   &kp ESC    &trans    &trans
+&kp HOME         &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp END           &kp ASTERISK  &kp N7   &kp N8  &kp N9  &kp MINUS
+&kp DELETE       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp LEFT_SHIFT    &kp SLASH     &kp N4   &kp N5  &kp N6  &kp PLUS
+&kp PRINTSCREEN  &kp N1          &kp N2          &kp N3         &kp N0            &kp KP_CLEAR  &kp N1   &kp N2  &kp N3  &kp ENTER
+                                                 &trans         &trans            &kp N0        &kp DOT
             >;
         };
 
