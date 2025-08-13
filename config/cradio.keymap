@@ -90,13 +90,13 @@
             >;
         };
 
-        func {
-            display-name = "func";
+        func_mouse {
+            display-name = "func_mouse";
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &trans    &trans  &trans         &trans  &kp C_MUTE    &kp C_PREV
-&kp F5  &kp F6   &kp F7   &kp F8   &trans    &trans  &kp C_BRI_UP   &trans  &kp C_VOL_UP  &kp C_PP
-&kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp C_BRI_DEC  &trans  &kp C_VOL_DN  &kp C_NEXT
-                          &trans   &trans    &trans  &trans
+&kp F1  &kp F2   &kp F3   &kp F4        &kp C_VOL_UP    &kp C_PLAY_PAUSE  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &mkp MCLK
+&kp F5  &kp F6   &kp F7   &kp F8        &kp C_VOL_UP    &kp C_NEXT        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK
+&kp F9  &kp F10  &kp F11  &kp F12       &kp C_MUTE      &kp C_PREV        &msc SCRL_DOWN  &key_repeat     &msc SCRL_UP     &mkp RCLK
+                          &kp C_BRI_DN  &kp C_BRI_UP    &trans            &trans
             >;
         };
 
