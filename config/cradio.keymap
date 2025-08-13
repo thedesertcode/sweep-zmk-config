@@ -1,9 +1,9 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
-# Cursor moving speed
+// Cursor moving speed
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
-# Scroll speed
+// Scroll speed
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 50
 
 #include <behaviors.dtsi>
