@@ -54,10 +54,10 @@
         default {
             display-name = "default";
             bindings = <
-&kp Q  &kp W       &kp E        &kp R       &kp T               &kp Y        &kp U         &kp I        &kp O       &kp P
-&kp A  &ht LALT S  &ht LCTRL D  &ht LGUI F  &kp G               &kp H        &ht RGUI J    &ht RCTRL K  &ht RALT L  &kp BACKSPACE
-&kp Z  &kp X       &kp C        &kp V       &kp B               &kp N        &kp M         &kp COMMA    &kp DOT     &kp ENTER
-                                &lt 2 TAB   &ht LSHIFT SPACE    &lt 1 SPACE  &lt 3 ESCAPE
+&mt ESCAPE Q  &kp W       &kp E        &kp R       &kp T               &kp Y        &kp U         &kp I        &kp O       &kp P
+&kp A         &ht LALT S  &ht LCTRL D  &ht LGUI F  &kp G               &kp H        &ht RGUI J    &ht RCTRL K  &ht RALT L  &kp BACKSPACE
+&kp Z         &kp X       &kp C        &kp V       &kp B               &kp N        &kp M         &kp COMMA    &kp DOT     &kp ENTER
+                                       &lt 2 TAB   &ht LSHIFT SPACE    &lt 1 SPACE  &lt 3 ESCAPE
             >;
         };
 
@@ -74,10 +74,10 @@
         num_nav {
             display-name = "num_nav";
             bindings = <
-&mt ESCAPE HOME  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp END            &kp ASTERISK  &kp N7   &kp N8  &kp N9  &kp MINUS
-&kp DELETE       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp LEFT_SHIFT     &kp SLASH     &kp N4   &kp N5  &kp N6  &kp PLUS
-&kp INS          &kp ENTER       &kp LC(C)       &kp LC(V)      &kp PRINTSCREEN    &tog 2        &kp N1   &kp N2  &kp N3  &kp ENTER
-                                                 &trans         &kp K_MENU         &kp N0        &kp DOT
+&kp HOME    &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN  &kp END               &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp DOT
+&kp DELETE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp LEFT_SHIFT        &kp SLASH     &kp N4  &kp N5  &kp N6  &trans
+&kp INS     &kp ENTER       &kp LC(C)       &kp LC(V)      &kp PRINTSCREEN       &kp MINUS     &kp N1  &kp N2  &kp N3  &trans
+                                            &tog 2         &kp K_CONTEXT_MENU    &kp PLUS      &kp N0
             >;
         };
 
