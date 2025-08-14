@@ -64,10 +64,10 @@
         symbols {
             display-name = "symbols";
             bindings = <
-&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE         &kp TILDE
-&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &kp FSLH     &kp MINUS  &kp EQUAL  &kp COLON  &kp LESS_THAN     &kp PIPE
-&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &kp BSLH     &kp UNDER  &kp PLUS   &kp SEMI   &kp GREATER_THAN  &kp QUESTION
-                              &trans    &trans       &trans     &trans
+&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS   &kp ASTRK  &kp GRAVE         &kp TILDE
+&kp DQT   &kp LBKT  &kp LBRC  &kp LPAR  &kp FSLH     &kp QUESTION  &kp MINUS  &kp COLON  &kp LESS_THAN     &kp EQUAL
+&kp SQT   &kp RBKT  &kp RBRC  &kp RPAR  &kp BSLH     &kp PIPE      &kp UNDER  &kp SEMI   &kp GREATER_THAN  &kp PLUS
+                              &trans    &trans       &trans        &trans
             >;
         };
 
