@@ -43,7 +43,7 @@
         compatible = "zmk,conditional-layers";
 
         macro_con {
-            if-layers = <2 3>;
+            if-layers = <2 1>;
             then-layer = <4>;
         };
     };
@@ -57,7 +57,7 @@
 &mt ESCAPE Q  &kp W       &kp E        &kp R       &kp T               &kp Y        &kp U         &kp I        &kp O       &kp P
 &kp A         &ht LALT S  &ht LCTRL D  &ht LGUI F  &kp G               &kp H        &ht RGUI J    &ht RCTRL K  &ht RALT L  &kp BACKSPACE
 &kp Z         &kp X       &kp C        &kp V       &kp B               &kp N        &kp M         &kp COMMA    &kp DOT     &kp ENTER
-                                       &lt 2 TAB   &ht LSHIFT SPACE    &lt 1 SPACE  &lt 3 ESCAPE
+                                       &lt 2 TAB   &ht LSHIFT SPACE    &lt 3 SPACE  &lt 1 ESCAPE
             >;
         };
 
