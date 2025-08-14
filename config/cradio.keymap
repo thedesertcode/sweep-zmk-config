@@ -94,9 +94,9 @@
         macro_con {
             display-name = "macro_con";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp RIGHT_BRACE    &trans  &trans  &trans  &trans
-&out OUT_USB  &trans        &trans        &trans        &bt BT_CLR      &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
-&out OUT_BLE  &trans        &trans        &trans        &bootloader     &bootloader        &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp RIGHT_BRACE    &kp DOUBLE_QUOTES  &kp COLON     &kp LEFT_BRACE    &kp TILDE
+&out OUT_USB  &trans        &trans        &trans        &bt BT_CLR      &kp RIGHT_BRACKET  &kp SINGLE_QUOTE   &kp SEMI      &kp LEFT_BRACKET  &kp GRAVE
+&out OUT_BLE  &soft_off     &trans        &trans        &bootloader     &bootloader        &kp SLASH          &kp QUESTION  &kp AMPS          &kp EXCLAMATION
                                           &trans        &trans          &trans             &trans
             >;
         };
