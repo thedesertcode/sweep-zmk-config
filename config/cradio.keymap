@@ -2,11 +2,11 @@
 // SPDX-License-Identifier: MIT
 // Cursor moving speed
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
 
 // Scroll speed
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 50
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
