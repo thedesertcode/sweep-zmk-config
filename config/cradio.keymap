@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 // Cursor moving speed
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
 
 // Scroll speed
 
@@ -43,23 +43,21 @@
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-            require-prior-idle-ms = <150>;
-            quick-tap-ms = <150>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <200>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
 
         mmv {
-            acceleration-exponent = <1>;
-            time-to-max-speed-ms = <300>;
+            acceleration-exponent = <0>;
+            time-to-max-speed-ms = <500>;
             delay-ms = <0>;
         };
 
         msc {
             acceleration-exponent = <0>;
-            time-to-max-speed-ms = <300>;
+            time-to-max-speed-ms = <500>;
             delay-ms = <10>;
         };
     };
