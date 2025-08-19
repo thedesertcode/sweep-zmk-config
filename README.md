@@ -24,6 +24,16 @@ TODO:
  * Replace MCU to nice!nano v2
  * Change switches to Ambient Nocturnal (20g)
  * Calibrate Debouncer time
+ * Improve language switch time by combo or macro. Make it separate
+ * Improve ru lang layout, try with tap dance behavior
+ * Improve using mouse layout. Try to move left/right movement to different halve
+ * Learn how works tap dance behavior, think about using it for keyboard improvement
+ * Slightly increase cursor speed
+ * Move 0 digit to another key
+ * Change dot on numpad to kp_dot
+ * Change symbols layout for easier and faster use of most popular symbols (,:,/,-,:,"
+ * Remove ESC from Q hold tap or change to tap dance
+ * Simplify punctuation keys on ru layout, to use existing keys
 
  Improvements:
  * Delete key on the left side. (Adds ability to delete when using the mouse)
