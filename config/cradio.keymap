@@ -46,7 +46,7 @@
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
