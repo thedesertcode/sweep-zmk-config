@@ -93,10 +93,10 @@
         num_nav {
             display-name = "num_nav";
             bindings = <
-&kp HOME        &kp PAGE_DOWN   &kp DELETE    &kp PAGE_UP  &kp END            &mt KP_DIVIDE KP_MULTIPLY  &kp N7      &kp N8  &kp N9  &kp KP_DOT
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT    &kp LEFT_SHIFT     &mt MINUS PLUS             &kp N4      &kp N5  &kp N6  &trans
-&kp INS         &kp ENTER       &kp LC(C)     &kp LC(V)    &kp PRINTSCREEN    &trans                     &kp N1      &kp N2  &kp N3  &trans
-                                              &to 0        &trans             &kp N0                     &kp KP_DOT
+&kp HOME        &kp PAGE_DOWN   &kp DELETE    &kp PAGE_UP      &kp END            &mt KP_DIVIDE KP_MULTIPLY  &kp N7      &kp N8  &kp N9  &kp KP_DOT
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp LEFT_SHIFT     &mt MINUS PLUS             &kp N4      &kp N5  &kp N6  &trans
+&kp INS         &kp ENTER       &kp LC(C)     &kp LC(V)        &kp PRINTSCREEN    &trans                     &kp N1      &kp N2  &kp N3  &trans
+                                              &to 0            &trans             &kp N0                     &kp KP_DOT
             >;
         };
 
