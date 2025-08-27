@@ -66,6 +66,18 @@
             bindings = <&kp>, <&kp>;
         };
 
+        sticky_hold: sticky_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "STICKY_HOLD";
+            bindings = <&kp>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+        };
+
         mmv {
             acceleration-exponent = <0>;
             time-to-max-speed-ms = <500>;
