@@ -78,6 +78,24 @@
             flavor = "balanced";
         };
 
+        base_nav_dance: base_nav_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BASE_NAV_DANCE";
+            #binding-cells = <0>;
+            bindings = <&to 0>, <&to 2>;
+
+            tapping-term-ms = <200>;
+        };
+
+        sym_num_dance: sym_num_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SYM_NUM_DANCE";
+            #binding-cells = <0>;
+            bindings = <&sl 1>, <&to 3>;
+
+            tapping-term-ms = <200>;
+        };
+
         mmv {
             acceleration-exponent = <0>;
             time-to-max-speed-ms = <500>;
@@ -111,10 +129,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp Q           &kp W       &kp E        &kp R             &kp T    &kp Y  &kp U              &kp I        &kp O       &kp P
-&ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G    &kp H  &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
-&kp Z           &kp X       &kp C        &kp V             &kp B    &kp N  &kp M              &kp COMMA    &kp DOT     &kp ENTER
-                                         &lt 2 SPACE       &to 0    &sl 1  &lt 4 TAB
+&kp Q           &kp W       &kp E        &kp R             &kp T              &kp Y           &kp U              &kp I        &kp O       &kp P
+&ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G              &kp H           &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
+&kp Z           &kp X       &kp C        &kp V             &kp B              &kp N           &kp M              &kp COMMA    &kp DOT     &kp ENTER
+                                         &lt 2 SPACE       &base_nav_dance    &sym_num_dance  &lt 3 TAB
             >;
         };
 
@@ -124,22 +142,31 @@
 &kp EXCL  &kp AT    &kp HASH  &kp DLLR              &kp PRCNT    &kp CARET     &kp AMPS   &kp ASTRK  &kp GRAVE         &kp TILDE
 &kp DQT   &kp LBKT  &kp LBRC  &kp LEFT_PARENTHESIS  &kp FSLH     &kp QUESTION  &kp MINUS  &kp COLON  &kp LESS_THAN     &kp EQUAL
 &kp SQT   &kp RBKT  &kp RBRC  &kp RPAR              &kp BSLH     &kp PIPE      &kp UNDER  &kp SEMI   &kp GREATER_THAN  &kp PLUS
-                              &none                 &trans       &to 2         &none
+                              &none                 &trans       &trans        &to 5
             >;
         };
 
         nav {
             display-name = "nav";
             bindings = <
-&kp ESCAPE      &kp PAGE_DOWN  &kp PAGE_UP     &none                 &kp DELETE         &kp HOME                    &mkp LCLK                       &mkp MCLK       &mkp RCLK     &none
-&kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp BACKSPACE      &kp INS                     &mmv MOVE_LEFT                  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&kp ENTER       &none          &kp LC(C)       &kp LC(V)             &kp PRINTSCREEN    &kp END                     &msc SCRL_LEFT                  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-                                               &sk_hold LCTRL LCTRL  &trans             &sk_hold LEFT_WIN LEFT_WIN  &sk_hold LEFT_SHIFT LEFT_SHIFT
+&kp ESCAPE      &kp PAGE_DOWN  &kp PAGE_UP     &kp PRINTSCREEN       &kp DELETE       &kp HOME                    &mkp LCLK                       &mkp MCLK       &mkp RCLK     &none
+&kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp BACKSPACE    &kp INS                     &mmv MOVE_LEFT                  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&key_repeat     &kp ENTER      &kp LC(C)       &kp LC(V)             &none            &kp END                     &msc SCRL_LEFT                  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+                                               &sk_hold LCTRL LCTRL  &trans           &sk_hold LEFT_WIN LEFT_WIN  &sk_hold LEFT_SHIFT LEFT_SHIFT
             >;
         };
 
-        func {
-            display-name = "func";
+        num {
+            bindings = <
+&kp PLUS   &kp N7  &kp N8  &kp N9        &kp MINUS       &trans  &trans  &trans  &trans  &trans
+&kp DOT    &kp N4  &kp N5  &kp NUMBER_6  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans
+&kp ENTER  &kp N1  &kp N2  &kp N3        &kp SLASH       &trans  &trans  &trans  &trans  &trans
+                           &kp N0        &trans          &trans  &trans
+            >;
+        };
+
+        fn {
+            display-name = "fn";
             bindings = <
 &kp F1  &kp F2   &kp F3   &kp F4   &none     &none  &none  &none  &none  &none
 &kp F5  &kp F6   &kp F7   &kp F8   &none     &none  &none  &none  &none  &none
@@ -148,8 +175,8 @@
             >;
         };
 
-        macro_con {
-            display-name = "macro_con";
+        sys {
+            display-name = "sys";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR     &trans       &trans  &trans  &trans  &trans
 &out OUT_USB  &out OUT_BLE  &trans        &trans        &soft_off      &trans       &trans  &trans  &trans  &trans
