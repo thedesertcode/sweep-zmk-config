@@ -20,6 +20,7 @@
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <175>;
+    require-prior-idle-ms = <150>;
 };
 
 &sk {
@@ -30,6 +31,7 @@
 / {
     keys {
         compatible = "gpio-keys";
+
         soft_off_gpio_key: soft_off_gpio_key { gpios = <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; };
     };
 
