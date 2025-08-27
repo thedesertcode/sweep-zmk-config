@@ -114,12 +114,28 @@
     combos {
         compatible = "zmk,combos";
 
-        sd_backspace {
+        sd_bkspc {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
             layers = <0>;
             timeout-ms = <40>;
             require-prior-idle-ms = <30>;
+        };
+
+        df_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <12 13>;
+            layers = <0>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <30>;
+        };
+
+        sf_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <11 13>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <30>;
+            layers = <0>;
         };
     };
 
