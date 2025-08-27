@@ -107,10 +107,10 @@
         nav {
             display-name = "num_nav";
             bindings = <
-&kp ESCAPE      &kp PAGE_DOWN   &kp PAGE_UP   &kp BACKSPACE    &kp DELETE        &kp HOME  &mkp LCLK       &mkp MCLK     &none           &mkp RCLK
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &sk LEFT_SHIFT    &kp INS   &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&none           &kp ENTER       &kp LC(C)     &kp LC(V)        &none             &kp END   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-                                              &trans           &to 0             &none     &none
+&kp ESCAPE      &kp PAGE_DOWN   &kp PAGE_UP   &kp BACKSPACE    &kp DELETE         &kp HOME  &mkp LCLK       &mkp MCLK     &none           &mkp RCLK
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &sk LEFT_SHIFT     &kp INS   &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+&none           &kp ENTER       &kp LC(C)     &kp LC(V)        &kp PRINTSCREEN    &kp END   &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
+                                              &kp LCTRL        &to 0              &none     &kp LEFT_SHIFT
             >;
         };
 
