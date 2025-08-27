@@ -111,6 +111,17 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
+    combos {
+        compatible = "zmk,combos";
+
+        sd_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <11 12>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
