@@ -128,10 +128,10 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp ESCAPE      &kp PAGE_DOWN   &kp PAGE_UP   &kp BACKSPACE             &kp DELETE                        &kp HOME                        &mkp LCLK                           &mkp MCLK     &mkp RCLK       &none
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW           &none                             &kp INS                         &mmv MOVE_LEFT                      &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
-&dance_to_base  &kp ENTER       &kp LC(C)     &kp LC(V)                 &kp PRINTSCREEN                   &kp END                         &msc SCRL_LEFT                      &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT
-                                              &sticky_hold LCTRL LCTRL  &sticky_hold LEFT_ALT LEFT_ALT    &sticky_hold LEFT_WIN LEFT_WIN  &sticky_hold LEFT_SHIFT LEFT_SHIFT
+&kp ESCAPE      &kp PAGE_DOWN  &kp PAGE_UP     &kp BACKSPACE             &kp DELETE                        &kp HOME                        &mkp LCLK                           &mkp MCLK       &mkp RCLK     &sticky_hold LEFT_ALT LEFT_ALT
+&kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW           &none                             &kp INS                         &mmv MOVE_LEFT                      &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&none           &kp ENTER      &kp LC(C)       &kp LC(V)                 &kp PRINTSCREEN                   &kp END                         &msc SCRL_LEFT                      &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+                                               &sticky_hold LCTRL LCTRL  &sticky_hold LEFT_ALT LEFT_ALT    &sticky_hold LEFT_WIN LEFT_WIN  &sticky_hold LEFT_SHIFT LEFT_SHIFT
             >;
         };
 
