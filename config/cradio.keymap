@@ -78,6 +78,15 @@
             flavor = "balanced";
         };
 
+        dance_to_base: dance_to_base {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DANCE_TO_BASE";
+            #binding-cells = <0>;
+            bindings = <&kp Z>, <&to 0>;
+
+            tapping-term-ms = <200>;
+        };
+
         mmv {
             acceleration-exponent = <0>;
             time-to-max-speed-ms = <500>;
