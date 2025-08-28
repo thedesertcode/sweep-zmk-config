@@ -113,7 +113,7 @@
             label = "NUM_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&num_hold 3 TAB>, <&to 3>;
+            bindings = <&num_hold 3 TAB>, <&tog 3>;
         };
 
         num_hold: num_hold {
