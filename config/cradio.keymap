@@ -82,18 +82,18 @@
             compatible = "zmk,behavior-tap-dance";
             label = "BASE_NAV_DANCE";
             #binding-cells = <0>;
-            bindings = <&base_nav_hold 2 0>, <&to 2>;
+            bindings = <&base_nav_hold 2 0>, <&tog 2>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
         };
 
         sym_dance: sym_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "SYM_DANCE";
             #binding-cells = <0>;
-            bindings = <&sl 1>, <&to 1>;
+            bindings = <&sl 1>, <&tog 1>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
         };
 
         base_nav_hold: base_nav_hold {
@@ -102,9 +102,9 @@
             bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            require-prior-idle-ms = <100>;
             flavor = "balanced";
         };
 
@@ -112,7 +112,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NUM_DANCE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&num_hold 3 TAB>, <&to 3>;
         };
 
@@ -122,19 +122,27 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            require-prior-idle-ms = <100>;
             flavor = "balanced";
         };
 
-        morph_v_tab: morph_v_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MORPH_V_TAB";
-            bindings = <&kp V>, <&kp TAB>;
-
+        v_tab_fw: v_tab_fw {
+            compatible = "zmk,behavior-tap-dance";
+            label = "V_TAB_FW";
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            tapping-term-ms = <200>;
+            bindings = <&kp V>, <&kp TAB>;
+        };
+
+        b_tab_back: b_tab_back {
+            compatible = "zmk,behavior-tap-dance";
+            label = "B_TAB_BACK";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&kp LS(TAB)>;
+
+            tapping-term-ms = <200>;
         };
 
         mmv {
@@ -192,7 +200,7 @@
             bindings = <
 &kp Q           &kp W       &kp E        &kp R             &kp T              &kp Y       &kp U              &kp I        &kp O       &kp P
 &ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G              &kp H       &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
-&kp Z           &kp X       &kp C        &morph_v_tab      &kp B              &kp N       &kp M              &kp COMMA    &kp DOT     &kp ENTER
+&kp Z           &kp X       &kp C        &v_tab_fw         &b_tab_back        &kp N       &kp M              &kp COMMA    &kp DOT     &kp ENTER
                                          &lt 4 SPACE       &base_nav_dance    &sym_dance  &num_dance
             >;
         };
@@ -229,7 +237,7 @@
         fn {
             display-name = "fn";
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &none                 &kp C_PREV            &kp C_PLAY_PAUSE  &kp C_NEXT  &kp K_LOCK
+&kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &none                 &kp C_PREV            &kp C_PLAY_PAUSE  &kp C_NEXT  &kp K_SCREENSAVER
 &kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &none                 &trans                &trans            &trans      &trans
 &kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &none                 &none                 &none             &none       &none
                          &none   &trans               &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
