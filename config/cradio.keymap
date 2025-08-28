@@ -93,7 +93,7 @@
             #binding-cells = <0>;
             bindings = <&sl 1>, <&tog 1>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
         };
 
         tab_nav_hold: tab_nav_hold {
@@ -112,7 +112,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NUM_DANCE";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
             bindings = <&num_hold 3 CAPSLOCK>, <&tog 3>;
         };
 
