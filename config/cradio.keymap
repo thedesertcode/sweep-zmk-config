@@ -114,27 +114,31 @@
     combos {
         compatible = "zmk,combos";
 
-        sd_bkspc {
+        combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
             layers = <0>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <50>;
         };
 
-        df_delete {
+        combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <12 13>;
             layers = <0>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <50>;
         };
 
-        sf_esc {
+        combo_esc {
             bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_enter {
+            bindings = <&kp ENTER>;
             key-positions = <11 13>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <50>;
             layers = <0>;
         };
     };
