@@ -150,12 +150,14 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
             timeout-ms = <50>;
+            layers = <0>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <12 13>;
             timeout-ms = <50>;
+            layers = <0>;
         };
 
         combo_esc {
@@ -174,6 +176,30 @@
             bindings = <&to 0>;
             key-positions = <10 30>;
             timeout-ms = <50>;
+        };
+
+        combo_home {
+            bindings = <&kp HOME>;
+            key-positions = <11 12>;
+            timeout-ms = <50>;
+            layers = <2>;
+        };
+
+        combo_pgup {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <10 11>;
+        };
+
+        combo_pgdn {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <12 13>;
+        };
+
+        combo_end {
+            bindings = <&kp END>;
+            key-positions = <10 13>;
+            timeout-ms = <50>;
+            layers = <2>;
         };
     };
 
@@ -203,10 +229,10 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp ESCAPE      &kp PAGE_DOWN  &kp PAGE_UP     &kp PRINTSCREEN       &kp DELETE       &kp HOME                    &mkp LCLK                       &mkp MCLK       &mkp RCLK     &key_repeat
-&kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp BACKSPACE    &kp INS                     &mmv MOVE_LEFT                  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&kp TAB         &kp ENTER      &kp LC(C)       &kp LC(V)             &none            &kp END                     &msc SCRL_LEFT                  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-                                               &sk_hold LCTRL LCTRL  &trans           &sk_hold LEFT_WIN LEFT_WIN  &sk_hold LEFT_SHIFT LEFT_SHIFT
+&none           &none         &none           &kp PRINTSCREEN       &kp DELETE       &none                       &mkp LCLK                       &mkp MCLK       &mkp RCLK     &key_repeat
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp BACKSPACE    &kp INS                     &mmv MOVE_LEFT                  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&kp TAB         &kp ENTER     &kp LC(C)       &kp LC(V)             &kp SPACE        &none                       &msc SCRL_LEFT                  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+                                              &sk_hold LCTRL LCTRL  &trans           &sk_hold LEFT_WIN LEFT_WIN  &sk_hold LEFT_SHIFT LEFT_SHIFT
             >;
         };
 
