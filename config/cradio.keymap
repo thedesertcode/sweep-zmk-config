@@ -84,7 +84,7 @@
             #binding-cells = <0>;
             bindings = <&tab_nav_hold 2 TAB>, <&tog 2>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
         };
 
         sym_dance: sym_dance {
@@ -104,6 +104,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             flavor = "balanced";
+            quick-tap-ms = <125>;
+            require-prior-idle-ms = <100>;
         };
 
         num_dance: num_dance {
