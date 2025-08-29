@@ -230,10 +230,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp Q           &kp W       &kp E        &kp R             &kp T             &kp Y       &kp U              &kp I        &kp O       &kp P
-&ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G             &kp H       &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
-&kp Z           &kp X       &kp C        &kp V             &kp B             &kp N       &kp M              &kp COMMA    &kp DOT     &kp ENTER
-                                         &lt 4 SPACE       &tab_nav_dance    &sym_dance  &num_dance
+&kp Q           &kp W       &kp E        &kp R             &kp T          &kp Y       &kp U              &kp I        &kp O       &kp P
+&ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G          &kp H       &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
+&kp Z           &kp X       &kp C        &kp V             &kp B          &kp N       &kp M              &kp COMMA    &kp DOT     &kp ENTER
+                                         &tab_nav_dance    &lt 4 SPACE    &sym_dance  &num_dance
             >;
         };
 
