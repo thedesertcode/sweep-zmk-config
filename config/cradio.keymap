@@ -292,6 +292,12 @@
             key-positions = <12 17>;
             timeout-ms = <50>;
         };
+
+        combo_win_app_switch {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <12 22>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
@@ -320,7 +326,7 @@
         nav {
             display-name = "nav";
             bindings = <
-&none           &none         &none           &kp PRINTSCREEN  &none             &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&none           &none         &none           &kp PRINTSCREEN  &kp LG(TAB)       &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SPACE         &kp INS         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &kp ENTER       &kp LEFT_WIN  &kp LEFT_ALT    &kp LCTRL        &kp LEFT_SHIFT    &kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN  &kp ENTER
                                               &trans           &trans            &mkp LCLK       &mkp RCLK
