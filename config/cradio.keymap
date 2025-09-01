@@ -128,6 +128,18 @@
             flavor = "balanced";
         };
 
+        sl_hold: sl_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SL_HOLD";
+            bindings = <&kp>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+        };
+
         mmv {
             acceleration-exponent = <0>;
             time-to-max-speed-ms = <500>;
@@ -163,7 +175,7 @@
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            timeout-ms = <50>;
+            timeout-ms = <45>;
             layers = <0 2>;
         };
 
@@ -262,6 +274,13 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        combo_to_lang_ru {
+            bindings = <&sl 9>;
+            key-positions = <10 30>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -270,10 +289,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp Q           &kp W       &kp E        &kp R             &kp T          &kp Y             &kp U              &kp I        &kp O       &kp P
-&ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G          &kp H             &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
-&kp Z           &kp X       &kp C        &kp V             &kp B          &kp N             &kp M              &kp COMMA    &kp DOT     &kp ENTER
-                                         &lt 4 TAB         &lt 2 SPACE    &lt 1 LEFT_SHIFT  &lt 3 ENTER
+&kp Q           &kp W       &kp E        &kp R             &kp T          &kp Y                  &kp U              &kp I        &kp O       &kp P
+&ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G          &kp H                  &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
+&kp Z           &kp X       &kp C        &kp V             &kp B          &kp N                  &kp M              &kp COMMA    &kp DOT     &kp ENTER
+                                         &lt 4 TAB         &lt 2 SPACE    &sl_hold LEFT_SHIFT 1  &lt 3 ENTER
             >;
         };
 
@@ -283,7 +302,7 @@
 &kp EXCL  &kp AT    &kp HASH  &kp DLLR              &kp PRCNT    &kp CARET     &kp AMPS   &kp ASTRK  &kp GRAVE         &kp TILDE
 &kp DQT   &kp LBKT  &kp LBRC  &kp LEFT_PARENTHESIS  &kp FSLH     &kp QUESTION  &kp MINUS  &kp COLON  &kp LESS_THAN     &kp EQUAL
 &kp SQT   &kp RBKT  &kp RBRC  &kp RPAR              &kp BSLH     &kp PIPE      &kp UNDER  &kp SEMI   &kp GREATER_THAN  &kp PLUS
-                              &sl 5                 &trans       &trans        &none
+                              &trans                &trans       &trans        &trans
             >;
         };
 
@@ -300,19 +319,19 @@
         num {
             bindings = <
 &kp PLUS  &kp N7  &kp N8  &kp N9        &kp MINUS       &trans  &trans  &trans  &trans  &trans
-&kp DOT   &kp N4  &kp N5  &kp NUMBER_6  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans
-&none     &kp N1  &kp N2  &kp N3        &kp SLASH       &trans  &trans  &trans  &trans  &trans
-                          &kp N0        &trans          &trans  &trans
+&kp DOT   &kp N4  &kp N5  &kp NUMBER_6  &kp ASTERISK    &trans  &trans  &trans  &trans  &kp BACKSPACE
+&kp DOT   &kp N1  &kp N2  &kp N3        &kp SLASH       &trans  &trans  &trans  &trans  &kp ENTER
+                          &kp N0        &kp N0          &trans  &trans
             >;
         };
 
         fn {
             display-name = "fn";
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &none                 &kp C_PREV            &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LG(L)
-&kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &none                 &trans                &trans            &trans      &trans
-&kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &none                 &none                 &none             &none       &none
-                         &none   &trans               &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &none                 &kp C_PREV            &kp C_PLAY_PAUSE  &kp C_NEXT    &kp LG(L)
+&kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &none                 &kp LEFT_SHIFT        &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN
+&kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &none                 &none                 &none             &none         &none
+                         &trans  &trans               &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
             >;
         };
 
@@ -354,6 +373,15 @@
 &none  &none  &none  &none  &none     &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none     &none  &none  &none  &none  &none
                      &none  &trans    &none  &none
+            >;
+        };
+
+        lang_ru {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACE    &kp COLON      &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &trans
+&trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACKET  &kp SEMICOLON  &kp LEFT_BRACKET  &kp APOSTROPHE     &trans
+&trans  &trans  &trans  &trans  &trans    &trans             &trans         &trans            &trans             &trans
+                        &trans  &trans    &trans             &trans
             >;
         };
     };
