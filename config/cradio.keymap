@@ -292,7 +292,7 @@
             bindings = <
 &none           &none         &none           &kp PRINTSCREEN  &none     &none      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &kp INS    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&none           &kp LEFT_WIN  &kp LEFT_ALT    &kp LCTRL        &none     &none      &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN  &trans
+&kp ENTER       &kp LEFT_WIN  &kp LEFT_ALT    &kp LCTRL        &none     &none      &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN  &trans
                                               &trans           &trans    &mkp LCLK  &mkp RCLK
             >;
         };
