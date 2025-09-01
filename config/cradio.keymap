@@ -281,6 +281,11 @@
             timeout-ms = <50>;
             layers = <0>;
         };
+
+        combo_to_nav_split {
+            bindings = <&to 2>;
+            key-positions = <13 16>;
+        };
     };
 
     keymap {
