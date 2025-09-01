@@ -298,6 +298,22 @@
             key-positions = <12 22>;
             timeout-ms = <50>;
         };
+
+        combo_macro_app_switcher {
+            bindings = <&app_switcher>;
+            key-positions = <10 19>;
+            timeout-ms = <50>;
+        };
+    };
+
+    macros {
+        app_switcher: app_switcher {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(TAB)>, <&macro_wait_time 5>, <&to 2>;
+
+            label = "APP_SWITCHER";
+        };
     };
 
     keymap {
