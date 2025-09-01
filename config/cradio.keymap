@@ -378,8 +378,8 @@
 
         lang_ru {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACE    &kp COLON      &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &trans
-&trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACKET  &kp SEMICOLON  &kp LEFT_BRACKET  &kp APOSTROPHE     &trans
+&trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACE    &kp COLON      &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &kp TILDE
+&trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACKET  &kp SEMICOLON  &kp LEFT_BRACKET  &kp APOSTROPHE     &kp GRAVE
 &trans  &trans  &trans  &trans  &trans    &trans             &trans         &trans            &trans             &trans
                         &trans  &trans    &trans             &trans
             >;
