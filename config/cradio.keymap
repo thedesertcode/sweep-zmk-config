@@ -311,6 +311,13 @@
             key-positions = <10 19>;
             timeout-ms = <50>;
         };
+
+        combo_ntab_then_base {
+            bindings = <&new_tab_then_base>;
+            key-positions = <16 18>;
+            timeout-ms = <50>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -320,6 +327,13 @@
             bindings = <&kp LG(TAB)>, <&macro_wait_time 5>, <&to 2>;
 
             label = "APP_SWITCHER";
+        };
+
+        new_tab_then_base: new_tab_then_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T) &to 0>;
+            label = "NEW_TAB_THEN_BASE";
         };
     };
 
