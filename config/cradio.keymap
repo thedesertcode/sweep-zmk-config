@@ -153,14 +153,7 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        ru_lang {
-            if-layers = <2 1>;
-            then-layer = <9>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
@@ -284,7 +277,7 @@
 
         combo_to_lang_ru {
             bindings = <&sl 9>;
-            key-positions = <10 30>;
+            key-positions = <16 19>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -372,9 +365,9 @@
 
         num {
             bindings = <
-&kp PLUS  &kp N7  &kp N8  &kp N9        &kp ASTERISK    &trans  &trans  &trans  &trans  &trans
-&kp DOT   &kp N4  &kp N5  &kp NUMBER_6  &kp SLASH       &trans  &trans  &trans  &trans  &trans
-&kp N0    &kp N1  &kp N2  &kp N3        &trans          &trans  &trans  &trans  &trans  &trans
+&kp PLUS  &kp N7  &kp N8  &kp N9        &kp MINUS       &trans  &trans  &trans  &trans  &trans
+&kp DOT   &kp N4  &kp N5  &kp NUMBER_6  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans
+&kp N0    &kp N1  &kp N2  &kp N3        &kp SLASH       &trans  &trans  &trans  &trans  &trans
                           &trans        &trans          &trans  &trans
             >;
         };
