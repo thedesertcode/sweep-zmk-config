@@ -153,7 +153,14 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        ru_lang {
+            if-layers = <2 1>;
+            then-layer = <9>;
+        };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -294,7 +301,7 @@
         };
 
         combo_win_app_switch {
-            bindings = <&kp LG(TAB)>;
+            bindings = <&app_switcher>;
             key-positions = <12 22>;
             timeout-ms = <50>;
         };
@@ -342,7 +349,7 @@
         nav {
             display-name = "nav";
             bindings = <
-&none           &none         &none           &kp PRINTSCREEN  &kp LG(TAB)       &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&kp LA(F4)      &kp LC(Q)     &kp LC(W)       &kp PRINTSCREEN  &kp LG(TAB)       &mkp MCLK       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SPACE         &kp INS         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &kp ENTER       &kp LEFT_WIN  &kp LEFT_ALT    &kp LCTRL        &kp LEFT_SHIFT    &kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN  &kp ENTER
                                               &trans           &trans            &mkp LCLK       &mkp RCLK
@@ -351,10 +358,10 @@
 
         num {
             bindings = <
-&none      &kp N7  &kp N8  &kp N9        &none           &trans  &trans  &trans  &trans  &trans
-&kp PLUS   &kp N4  &kp N5  &kp NUMBER_6  &kp ASTERISK    &trans  &trans  &trans  &trans  &trans
-&kp MINUS  &kp N1  &kp N2  &kp N3        &kp SLASH       &trans  &trans  &trans  &trans  &trans
-                           &kp DOT       &kp N0          &trans  &trans
+&kp PLUS  &kp N7  &kp N8  &kp N9        &kp ASTERISK    &trans  &trans  &trans  &trans  &trans
+&kp DOT   &kp N4  &kp N5  &kp NUMBER_6  &kp SLASH       &trans  &trans  &trans  &trans  &trans
+&kp N0    &kp N1  &kp N2  &kp N3        &trans          &trans  &trans  &trans  &trans  &trans
+                          &trans        &trans          &trans  &trans
             >;
         };
 
