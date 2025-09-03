@@ -299,7 +299,7 @@
 
         combo_macro_app_switcher {
             bindings = <&app_switcher>;
-            key-positions = <10 19>;
+            key-positions = <20 29>;
             timeout-ms = <50>;
         };
 
