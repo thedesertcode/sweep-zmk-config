@@ -176,19 +176,17 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
             timeout-ms = <45>;
-            layers = <0 2 3>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <11 13>;
             timeout-ms = <50>;
-            layers = <0 3>;
         };
 
         combo_to_base {
             bindings = <&to 0>;
-            key-positions = <10 31>;
+            key-positions = <10 30>;
             timeout-ms = <50>;
         };
 
@@ -220,30 +218,30 @@
 
         combo_to_sym {
             bindings = <&to 1>;
-            key-positions = <11 31>;
+            key-positions = <11 30>;
             timeout-ms = <50>;
         };
 
         combo_to_nav {
             bindings = <&to 2>;
-            key-positions = <12 31>;
+            key-positions = <12 30>;
         };
 
         combo_to_num {
             bindings = <&to 3>;
-            key-positions = <13 31>;
+            key-positions = <13 30>;
             timeout-ms = <50>;
         };
 
         combo_to_fn {
             bindings = <&to 4>;
-            key-positions = <20 31>;
+            key-positions = <20 30>;
             timeout-ms = <50>;
         };
 
         combo_to_sys {
             bindings = <&to 5>;
-            key-positions = <21 31>;
+            key-positions = <21 30>;
             timeout-ms = <50>;
         };
 
@@ -311,6 +309,45 @@
             timeout-ms = <50>;
             layers = <2>;
         };
+
+        combo_to_sym_split {
+            bindings = <&to 1>;
+            key-positions = <11 18>;
+            timeout-ms = <50>;
+        };
+
+        combo_to_num_split {
+            bindings = <&to 3>;
+            key-positions = <10 19>;
+            timeout-ms = <50>;
+        };
+
+        combo_en_input {
+            bindings = <&kp LC(LS(N1))>;
+            key-positions = <31 32>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_ru_input {
+            bindings = <&kp LC(LS(N2))>;
+            key-positions = <30 33>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
+
+        combo_capsword {
+            bindings = <&caps_word>;
+            key-positions = <30 32>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_select_all {
+            bindings = <&kp LC(A)>;
+            key-positions = <20 23>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
@@ -356,7 +393,7 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp LA(F4)      &kp LC(Q)     &kp LC(W)       &kp PRINTSCREEN  &kp LG(TAB)       &mkp MCLK       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
+&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)       &mkp MCLK       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SPACE         &kp INS         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &kp ENTER       &kp LEFT_WIN  &kp LEFT_ALT    &kp LCTRL        &kp LEFT_SHIFT    &kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN  &kp ENTER
                                               &trans           &trans            &mkp LCLK       &mkp RCLK
