@@ -348,6 +348,24 @@
             key-positions = <20 23>;
             timeout-ms = <50>;
         };
+
+        combo_mouse_lclk {
+            bindings = <&mkp LCLK>;
+            key-positions = <17 18>;
+            timeout-ms = <50>;
+        };
+
+        combo_mouse_rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <18 19>;
+            timeout-ms = <50>;
+        };
+
+        combo_mouse_mclk {
+            bindings = <&mkp MCLK>;
+            key-positions = <17 19>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
