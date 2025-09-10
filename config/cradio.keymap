@@ -266,20 +266,6 @@
             layers = <0 2>;
         };
 
-        combo_lang_switch {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <10 13>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_to_lang_ru {
-            bindings = <&sl 9>;
-            key-positions = <16 19>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
         combo_to_base_split {
             bindings = <&to 0>;
             key-positions = <13 16>;
@@ -307,7 +293,6 @@
             bindings = <&new_tab_then_base>;
             key-positions = <16 18>;
             timeout-ms = <50>;
-            layers = <2>;
         };
 
         combo_to_sym_split {
@@ -326,13 +311,11 @@
             bindings = <&kp LC(LS(N1))>;
             key-positions = <31 32>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         combo_ru_input {
             bindings = <&kp LC(LS(N2))>;
             key-positions = <30 33>;
-            layers = <0>;
             timeout-ms = <50>;
         };
 
@@ -340,7 +323,6 @@
             bindings = <&caps_word>;
             key-positions = <30 32>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         combo_select_all {
@@ -393,35 +375,35 @@
 
         combo_ru_tz {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <31 15>;
+            key-positions = <15 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_ru_j {
             bindings = <&kp SEMI>;
-            key-positions = <31 16>;
+            key-positions = <16 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_ru_x {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 17>;
+            key-positions = <17 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_ru_e {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <31 18>;
+            key-positions = <18 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_ru_yo {
             bindings = <&kp GRAVE>;
-            key-positions = <31 19>;
+            key-positions = <19 32>;
             timeout-ms = <50>;
             layers = <0>;
         };
@@ -470,10 +452,10 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)       &mkp MCLK       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SPACE         &kp INS         &mkp LCLK       &mkp MCLK       &mkp RCLK     &mmv MOVE_RIGHT
-&kp ENTER       &kp LEFT_WIN  &kp LEFT_ALT    &kp LCTRL        &kp LEFT_SHIFT    &kp LEFT_SHIFT  &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN  &kp ENTER
-                                              &trans           &trans            &mkp LCLK       &mkp RCLK
+&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)    &none   &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT     &none   &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN
+&kp ENTER       &none         &none           &none            &kp SPACE      &none   &none           &none              &none          &kp ENTER
+                                              &trans           &trans         &trans  &trans
             >;
         };
 
