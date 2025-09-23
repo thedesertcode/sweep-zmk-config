@@ -473,10 +473,10 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)    &none   &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT     &none   &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN
-&kp ENTER       &none         &none           &none            &kp SPACE      &none   &none           &none              &none          &kp ENTER
-                                              &trans           &trans         &trans  &trans
+&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)    &minimize_parsec  &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT     &none             &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN
+&kp ENTER       &none         &none           &none            &kp SPACE      &none             &none           &none              &none          &kp ENTER
+                                              &trans           &trans         &trans            &trans
             >;
         };
 
