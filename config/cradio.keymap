@@ -430,6 +430,21 @@
             bindings = <&kp LC(T) &to 0>;
             label = "NEW_TAB_THEN_BASE";
         };
+
+        minimize_parsec: minimize_parsec {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LC(LS(W))>,
+                <&macro_wait_time 20>,
+                <&kp LC(F10)>,
+                <&macro_wait_time 20>,
+                <&kp LG(DOWN)>,
+                <&macro_wait_time 20>,
+                <&kp LG(DOWN)>;
+
+            label = "MINIMIZE_PARSEC";
+        };
     };
 
     keymap {
