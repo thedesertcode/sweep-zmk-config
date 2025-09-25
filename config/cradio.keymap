@@ -436,11 +436,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LC(LS(W))>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 30>,
                 <&kp LC(F10)>,
-                <&macro_wait_time 20>,
-                <&kp LG(DOWN)>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 30>,
                 <&kp LG(DOWN)>;
 
             label = "MINIMIZE_PARSEC";
