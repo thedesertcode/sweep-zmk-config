@@ -4,7 +4,7 @@
 #include "cradio.dtsi"
 
 &kscan0 {
-    debounce-press-ms = <8>;
-    debounce-release-ms = <8>;
+    debounce-press-ms = <1>;
+    debounce-release-ms = <1>;
     debounce-scan-period-ms = <1>;
 };
