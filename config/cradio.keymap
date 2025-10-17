@@ -161,27 +161,27 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0 3>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <12 13>;
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             layers = <0 3>;
         };
 
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            timeout-ms = <45>;
+            timeout-ms = <40>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <11 13>;
-            timeout-ms = <50>;
+            timeout-ms = <40>;
         };
 
         combo_to_base {
