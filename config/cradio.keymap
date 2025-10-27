@@ -140,6 +140,18 @@
             flavor = "balanced";
         };
 
+        mclk_hold: mclk_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MCLK_HOLD";
+            bindings = <&to>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+        };
+
         mmv {
             acceleration-exponent = <0>;
             time-to-max-speed-ms = <500>;
@@ -162,14 +174,12 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
             timeout-ms = <40>;
-            layers = <0 3>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <12 13>;
             timeout-ms = <40>;
-            layers = <0 3>;
         };
 
         combo_esc {
@@ -192,28 +202,24 @@
 
         combo_home {
             bindings = <&kp HOME>;
-            key-positions = <11 12>;
+            key-positions = <10 20>;
             timeout-ms = <50>;
-            layers = <2>;
         };
 
         combo_pgup {
             bindings = <&kp PAGE_UP>;
-            key-positions = <10 11>;
-            layers = <2>;
+            key-positions = <11 21>;
         };
 
         combo_pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <12 13>;
-            layers = <2>;
+            key-positions = <12 22>;
         };
 
         combo_end {
             bindings = <&kp END>;
-            key-positions = <10 13>;
+            key-positions = <13 23>;
             timeout-ms = <50>;
-            layers = <2>;
         };
 
         combo_to_sym {
@@ -249,79 +255,37 @@
             bindings = <&kp LC(X)>;
             key-positions = <20 21>;
             timeout-ms = <50>;
-            layers = <0 2>;
         };
 
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <21 22>;
             timeout-ms = <50>;
-            layers = <0 2>;
+            layers = <0>;
         };
 
         combo_paste {
             bindings = <&kp LC(V)>;
             key-positions = <22 23>;
             timeout-ms = <50>;
-            layers = <0 2>;
-        };
-
-        combo_to_base_split {
-            bindings = <&to 0>;
-            key-positions = <13 16>;
-        };
-
-        combo_to_nav_split {
-            bindings = <&to 2>;
-            key-positions = <12 17>;
-            timeout-ms = <50>;
-        };
-
-        combo_win_app_switch {
-            bindings = <&app_switcher>;
-            key-positions = <12 22>;
-            timeout-ms = <50>;
-        };
-
-        combo_macro_app_switcher {
-            bindings = <&app_switcher>;
-            key-positions = <20 29>;
-            timeout-ms = <50>;
-        };
-
-        combo_ntab_then_base {
-            bindings = <&new_tab_then_base>;
-            key-positions = <16 18>;
-            timeout-ms = <50>;
-        };
-
-        combo_to_sym_split {
-            bindings = <&to 1>;
-            key-positions = <11 18>;
-            timeout-ms = <50>;
-        };
-
-        combo_to_num_split {
-            bindings = <&to 3>;
-            key-positions = <10 19>;
-            timeout-ms = <50>;
+            layers = <0>;
         };
 
         combo_en_input {
             bindings = <&kp LC(LS(N1))>;
-            key-positions = <31 32>;
+            key-positions = <10 31>;
             timeout-ms = <50>;
         };
 
         combo_ru_input {
             bindings = <&kp LC(LS(N2))>;
-            key-positions = <30 33>;
+            key-positions = <20 31>;
             timeout-ms = <50>;
         };
 
         combo_capsword {
             bindings = <&caps_word>;
-            key-positions = <30 32>;
+            key-positions = <5 15>;
             timeout-ms = <50>;
         };
 
@@ -333,7 +297,7 @@
 
         combo_mouse_lclk {
             bindings = <&mkp LCLK>;
-            key-positions = <17 16>;
+            key-positions = <16 26>;
             timeout-ms = <50>;
         };
 
@@ -351,25 +315,25 @@
 
         combo_msc_down {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <17 7>;
+            key-positions = <17 27>;
             timeout-ms = <50>;
         };
 
         combo_msc_up {
             bindings = <&msc SCRL_UP>;
-            key-positions = <8 18>;
+            key-positions = <7 17>;
             timeout-ms = <50>;
         };
 
         combo_msc_left {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <17 27>;
+            key-positions = <6 16>;
             timeout-ms = <50>;
         };
 
         combo_msc_right {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <18 28>;
+            key-positions = <18 8>;
             timeout-ms = <50>;
         };
 
@@ -377,41 +341,55 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <15 32>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         combo_ru_j {
             bindings = <&kp SEMI>;
             key-positions = <32 17>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         combo_ru_x {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <32 16>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         combo_ru_e {
             bindings = <&kp APOSTROPHE>;
             key-positions = <18 32>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
         combo_ru_yo {
             bindings = <&kp GRAVE>;
             key-positions = <19 32>;
             timeout-ms = <50>;
-            layers = <0>;
         };
 
-        combo_to_gaming {
-            bindings = <&to 6>;
-            key-positions = <30 24>;
+        combo_capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <15 25>;
             timeout-ms = <50>;
+        };
+
+        combo_shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <31 32>;
+            timeout-ms = <50>;
+        };
+
+        combo_term_copy {
+            bindings = <&kp LC(LS(C))>;
+            key-positions = <21 22>;
+            timeout-ms = <50>;
+            layers = <2>;
+        };
+
+        combo_term_paste {
+            bindings = <&kp LC(LS(V))>;
+            key-positions = <22 23>;
+            layers = <2>;
         };
     };
 
@@ -451,10 +429,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp Q           &kp W       &kp E        &kp R             &kp T                    &kp Y        &kp U              &kp I        &kp O       &kp P
-&ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G                    &kp H        &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
-&kp Z           &kp X       &kp C        &kp V             &kp B                    &kp N        &kp M              &kp COMMA    &kp DOT     &kp ENTER
-                                         &lt 4 TAB         &sl_hold LEFT_SHIFT 1    &lt 2 SPACE  &lt 3 CAPSLOCK
+&kp Q           &kp W       &kp E        &kp R             &kp T          &kp Y              &kp U              &kp I        &kp O       &kp P
+&ht LEFT_WIN A  &ht LALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G          &kp H              &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &ht RIGHT_WIN BACKSPACE
+&kp Z           &kp X       &kp C        &kp V             &kp B          &kp N              &kp M              &kp COMMA    &kp DOT     &kp ENTER
+                                         &lt 3 TAB         &lt 2 SPACE    &mclk_hold 1 LCLK  &mclk_hold 4 RCLK
             >;
         };
 
@@ -471,10 +449,10 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)    &minimize_parsec  &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_UP   &msc SCRL_RIGHT
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT     &none             &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN
-&kp ENTER       &none         &none           &none            &kp SPACE      &none             &none           &none              &none          &kp ENTER
-                                              &trans           &trans         &trans            &trans
+&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)         &trans  &trans          &trans             &trans         &trans
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT          &trans  &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN
+&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &minimize_parsec    &trans  &trans          &trans             &trans         &trans
+                                              &trans           &trans              &trans  &trans
             >;
         };
 
@@ -490,10 +468,10 @@
         fn {
             display-name = "fn";
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_UP      &none                 &kp C_PREV            &kp C_PLAY_PAUSE  &kp C_NEXT    &kp LG(L)
-&kp F11  &kp F4  &kp F5  &kp F6  &kp C_VOLUME_DOWN    &none                 &kp LEFT_SHIFT        &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN
-&kp F10  &kp F1  &kp F2  &kp F3  &kp C_MUTE           &none                 &none                 &none             &none         &none
-                         &trans  &trans               &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&kp F12  &kp F7  &kp F8  &kp F9  &trans    &kp C_VOLUME_UP    &kp C_PREV            &kp C_PLAY_PAUSE  &kp C_NEXT    &kp LG(L)
+&kp F11  &kp F4  &kp F5  &kp F6  &trans    &kp C_VOLUME_DOWN  &kp LEFT_SHIFT        &kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN
+&kp F10  &kp F1  &kp F2  &kp F3  &trans    &kp C_MUTE         &kp C_BRIGHTNESS_DEC  &none             &none         &kp C_BRIGHTNESS_INC
+                         &trans  &trans    &trans             &trans
             >;
         };
 
@@ -501,9 +479,9 @@
             display-name = "sys";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR     &trans       &trans  &trans  &trans  &trans
-&out OUT_USB  &out OUT_BLE  &trans        &trans        &soft_off      &trans       &trans  &trans  &trans  &trans
-&to 6         &to 7         &to 8         &trans        &bootloader    &bootloader  &trans  &trans  &trans  &trans
-                                          &none         &trans         &trans       &trans
+&out OUT_USB  &out OUT_BLE  &trans        &trans        &trans         &trans       &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans         &trans       &trans  &trans  &trans  &trans
+                                          &soft_off     &bootloader    &bootloader  &trans
             >;
         };
 
@@ -535,15 +513,6 @@
 &none  &none  &none  &none  &none     &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none     &none  &none  &none  &none  &none
                      &none  &trans    &none  &none
-            >;
-        };
-
-        lang_ru {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACE    &kp COLON      &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &kp TILDE
-&trans  &trans  &trans  &trans  &trans    &kp RIGHT_BRACKET  &kp SEMICOLON  &kp LEFT_BRACKET  &kp APOSTROPHE     &kp GRAVE
-&trans  &trans  &trans  &trans  &trans    &trans             &trans         &trans            &trans             &trans
-                        &trans  &trans    &trans             &trans
             >;
         };
     };
