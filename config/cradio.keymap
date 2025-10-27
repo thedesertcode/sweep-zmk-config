@@ -177,29 +177,31 @@
         combo_to_base {
             bindings = <&to 0>;
             key-positions = <10 30>;
-            timeout-ms = <50>;
+            timeout-ms = <40>;
         };
 
         combo_home {
             bindings = <&kp HOME>;
             key-positions = <10 0>;
-            timeout-ms = <50>;
+            timeout-ms = <70>;
         };
 
         combo_pgup {
             bindings = <&kp PAGE_UP>;
             key-positions = <1 11>;
+            timeout-ms = <70>;
         };
 
         combo_pgdn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <12 2>;
+            timeout-ms = <70>;
         };
 
         combo_end {
             bindings = <&kp END>;
             key-positions = <13 3>;
-            timeout-ms = <50>;
+            timeout-ms = <70>;
         };
 
         combo_to_sym {
@@ -374,7 +376,7 @@
 
         combo_ff_list_tabs {
             bindings = <&kp LC(LS(TAB))>;
-            key-positions = <16 19>;
+            key-positions = <10 13>;
             timeout-ms = <50>;
         };
     };
