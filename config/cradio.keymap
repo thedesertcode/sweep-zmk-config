@@ -391,6 +391,12 @@
             key-positions = <22 23>;
             layers = <2>;
         };
+
+        combo_ff_list_tabs {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <16 19>;
+            timeout-ms = <50>;
+        };
     };
 
     macros {
@@ -449,10 +455,10 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)         &trans  &trans          &trans             &trans         &trans
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT          &trans  &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN
-&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &minimize_parsec    &trans  &trans          &trans             &trans         &trans
-                                              &trans           &trans              &trans  &trans
+&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)        &minimize_parsec  &trans          &trans             &trans         &trans
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT         &trans            &kp LEFT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN
+&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LC(LS(TAB))    &trans            &trans          &trans             &trans         &trans
+                                              &trans           &trans             &trans            &trans
             >;
         };
 
