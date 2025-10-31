@@ -170,7 +170,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <10 13>;
+            key-positions = <13 11>;
             timeout-ms = <40>;
         };
 
@@ -370,7 +370,7 @@
 
         combo_ff_list_tabs {
             bindings = <&kp LC(LS(TAB))>;
-            key-positions = <11 13>;
+            key-positions = <13 10>;
             timeout-ms = <50>;
         };
 
