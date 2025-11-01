@@ -450,10 +450,10 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)        &trans  &trans          &trans     &trans        &trans
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT         &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN
-&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LC(LS(TAB))    &trans  &trans          &trans     &trans        &trans
-                                              &sl_hold 4 4     &trans             &trans  &trans
+&kp LC(Q)       &kp LC(W)     &trans          &trans           &kp LA(F4)    &kp SLASH     &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &trans
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans        &kp ASTERISK  &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &kp LEFT_WIN
+&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans        &kp MINUS     &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp DOT
+                                              &sl_hold 4 4     &trans        &kp PLUS      &kp NUMBER_0
             >;
         };
 
