@@ -378,7 +378,7 @@
 
         combo_ff_list_tabs {
             bindings = <&kp LC(LS(TAB))>;
-            key-positions = <13 10>;
+            key-positions = <10 14>;
             timeout-ms = <50>;
         };
 
@@ -390,7 +390,7 @@
 
         combo_space {
             bindings = <&kp SPACE>;
-            key-positions = <11 13>;
+            key-positions = <13 10>;
         };
     };
 
