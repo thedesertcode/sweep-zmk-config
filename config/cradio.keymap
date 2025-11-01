@@ -177,7 +177,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <13 11>;
+            key-positions = <11 12>;
             timeout-ms = <40>;
         };
 
@@ -262,13 +262,13 @@
 
         combo_en_input {
             bindings = <&kp LC(LS(N1))>;
-            key-positions = <31 20>;
+            key-positions = <31 10>;
             timeout-ms = <50>;
         };
 
         combo_ru_input {
             bindings = <&kp LC(LS(N2))>;
-            key-positions = <31 21>;
+            key-positions = <31 11>;
             timeout-ms = <50>;
         };
 
@@ -328,25 +328,25 @@
 
         combo_ru_tz {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <15 33>;
+            key-positions = <15 32>;
             timeout-ms = <50>;
         };
 
         combo_ru_j {
             bindings = <&kp SEMI>;
-            key-positions = <17 33>;
+            key-positions = <17 32>;
             timeout-ms = <50>;
         };
 
         combo_ru_x {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 33>;
+            key-positions = <16 32>;
             timeout-ms = <50>;
         };
 
         combo_ru_e {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <18 33>;
+            key-positions = <18 32>;
             timeout-ms = <50>;
         };
 
@@ -364,15 +364,16 @@
 
         combo_term_copy {
             bindings = <&kp LC(LS(C))>;
-            key-positions = <21 22 30>;
+            key-positions = <21 22>;
             timeout-ms = <50>;
             layers = <2>;
         };
 
         combo_term_paste {
             bindings = <&kp LC(LS(V))>;
-            key-positions = <22 23 30>;
+            key-positions = <22 23>;
             layers = <2>;
+            timeout-ms = <50>;
         };
 
         combo_ff_list_tabs {
@@ -389,7 +390,7 @@
 
         combo_space {
             bindings = <&kp SPACE>;
-            key-positions = <11 12>;
+            key-positions = <11 13>;
         };
     };
 
@@ -449,10 +450,10 @@
         nav {
             display-name = "nav";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)        &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT         &trans  &trans  &trans  &trans  &trans
-&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LC(LS(TAB))    &trans  &trans  &trans  &trans  &trans
-                                              &trans           &trans             &trans  &trans
+&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp PRINTSCREEN  &kp LG(TAB)        &trans  &trans          &trans     &trans        &trans
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp INSERT         &trans  &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN
+&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LC(LS(TAB))    &trans  &trans          &trans     &trans        &trans
+                                              &sl_hold 4 4     &trans             &trans  &trans
             >;
         };
 
