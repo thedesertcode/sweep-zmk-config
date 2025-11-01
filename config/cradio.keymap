@@ -352,7 +352,7 @@
 
         combo_ru_yo {
             bindings = <&kp GRAVE>;
-            key-positions = <19 33>;
+            key-positions = <19 32>;
             timeout-ms = <50>;
         };
 
