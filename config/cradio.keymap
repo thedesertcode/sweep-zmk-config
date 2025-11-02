@@ -6,7 +6,7 @@
 
 // Scroll speed
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 30
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 50
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -137,7 +137,7 @@
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            timeout-ms = <50>;
+            timeout-ms = <40>;
         };
 
         combo_enter {
