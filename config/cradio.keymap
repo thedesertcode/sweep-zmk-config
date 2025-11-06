@@ -1,6 +1,5 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
-
 // https://zmk.dev/docs/development/hardware-integration/soft-off-setup?advanced-methods=wakeup&kscan-type=dkscan
 
 #include <behaviors.dtsi>
@@ -10,9 +9,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // Cursor moving speed
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
 
 // Scroll speed
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 &lt {
@@ -24,17 +25,20 @@
 
 &sk {
     release-after-ms = <1500>;
+
     // quick-release;
 };
 
 &sl {
     release-after-ms = <1500>;
+
     //quick-release;
 };
 
 / {
     keys {
         compatible = "gpio-keys";
+
         soft_off_gpio_key: soft_off_gpio_key { gpios = <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; };
     };
 
@@ -73,6 +77,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SK_HOLD";
             bindings = <&kp>, <&sk>;
+
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             quick-tap-ms = <150>;
@@ -84,6 +89,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SL_HOLD";
             bindings = <&mo>, <&sl>;
+
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             quick-tap-ms = <150>;
@@ -104,14 +110,7 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        fn_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
@@ -412,7 +411,7 @@
 &kp EXCL   &kp AT            &kp HASH      &kp DLLR       &kp PRCNT          &kp CARET          &kp AMPS   &kp ASTRK      &kp GRAVE              &kp TILDE
 &kp PLUS   &kp LESS_THAN     &kp QUESTION  &kp COLON      &kp LEFT_BRACE     &kp LEFT_BRACKET   &kp MINUS  &kp SLASH      &kp LEFT_PARENTHESIS   &kp DQT
 &kp EQUAL  &kp GREATER_THAN  &kp PIPE      &kp SEMICOLON  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp UNDER  &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp APOS
-                                           &trans         &trans             &trans             &trans
+                                           &sl_hold 3 3   &trans             &trans             &trans
             >;
         };
 
@@ -422,7 +421,7 @@
 &kp LC(Q)       &kp LC(W)     &kp LG(TAB)     &trans           &kp LA(F4)          &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB             &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &kp LEFT_WIN
 &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &minimize_parsec    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp DOT
-                                              &trans           &kp LEFT_SHIFT      &kp SPACE  &kp N0
+                                              &mo 3            &kp LEFT_SHIFT      &kp SPACE  &kp N0
             >;
         };
 
