@@ -420,13 +420,13 @@
             >;
         };
 
-        nav {
-            display-name = "nav";
+        nav_num {
+            display-name = "nav_num";
             bindings = <
 &kp LC(Q)       &kp LC(W)     &kp LG(TAB)     &trans           &kp LA(F4)          &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB             &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &kp LEFT_WIN
-&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans              &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp DOT
-                                              &trans           &minimize_parsec    &kp N0     &trans
+&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &minimize_parsec    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp DOT
+                                              &trans           &kp LEFT_SHIFT      &kp SPACE  &kp N0
             >;
         };
 
