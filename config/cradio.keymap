@@ -6,7 +6,7 @@
 
 // Scroll speed
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 50
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -18,9 +18,9 @@
 
 &lt {
     flavor = "balanced";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <125>;
-    require-prior-idle-ms = <100>;
+    tapping-term-ms = <175>;
+    quick-tap-ms = <150>;
+    require-prior-idle-ms = <125>;
 };
 
 &sk {
@@ -64,9 +64,9 @@
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
-            tapping-term-ms = <150>;
-            quick-tap-ms = <125>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
@@ -77,9 +77,9 @@
             bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <125>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
             flavor = "balanced";
         };
 
@@ -89,9 +89,9 @@
             bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <125>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
             flavor = "balanced";
         };
 
@@ -102,7 +102,7 @@
         };
 
         msc {
-            acceleration-exponent = <3>;
+            acceleration-exponent = <1>;
             time-to-max-speed-ms = <1500>;
             delay-ms = <10>;
         };
