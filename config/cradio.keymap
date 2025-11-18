@@ -369,7 +369,7 @@
 &kp EXCL   &kp AT            &kp HASH      &kp DLLR       &kp PRCNT          &kp CARET          &kp AMPS      &kp ASTRK      &kp TILDE              &kp GRAVE
 &kp EQUAL  &kp LESS_THAN     &kp QUESTION  &kp COLON      &kp LEFT_BRACE     &kp LEFT_BRACKET   &kp MINUS     &kp SLASH      &kp LEFT_PARENTHESIS   &kp APOS
 &kp PLUS   &kp GREATER_THAN  &kp PIPE      &kp SEMICOLON  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp UNDER     &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
-                                           &trans         &trans             &trans             &sl_hold 3 3
+                                           &sl_hold 4 4   &trans             &trans             &sl_hold 3 3
             >;
         };
 
