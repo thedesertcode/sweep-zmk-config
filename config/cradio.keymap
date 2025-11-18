@@ -356,20 +356,20 @@
         base {
             display-name = "base";
             bindings = <
-&kp Q           &kp W           &kp E        &kp R             &kp T                             &kp Y      &kp U              &kp I        &kp O            &kp P
-&ht LEFT_WIN A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G                             &kp H      &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RIGHT_ALT L  &ht RIGHT_WIN BACKSPACE
-&kp Z           &kp X           &kp C        &kp V             &kp B                             &kp N      &kp M              &kp COMMA    &kp DOT          &kp ENTER
-                                             &sl_hold 2 2      &sk_hold LEFT_SHIFT LEFT_SHIFT    &kp SPACE  &sl_hold 1 1
+&kp Q           &kp W           &kp E        &kp R                           &kp T        &kp Y         &kp U              &kp I        &kp O            &kp P
+&ht LEFT_WIN A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F                &kp G        &kp H         &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RIGHT_ALT L  &ht RIGHT_WIN BACKSPACE
+&kp Z           &kp X           &kp C        &kp V                           &kp B        &kp N         &kp M              &kp COMMA    &kp DOT          &kp ENTER
+                                             &sk_hold LEFT_SHIFT LEFT_SHIFT  &kp SPACE    &sl_hold 2 2  &sl_hold 1 1
             >;
         };
 
         sym {
             display-name = "sym";
             bindings = <
-&kp EXCL   &kp AT            &kp HASH      &kp DLLR       &kp PRCNT          &kp CARET          &kp AMPS   &kp ASTRK      &kp TILDE              &kp GRAVE
-&kp EQUAL  &kp LESS_THAN     &kp QUESTION  &kp COLON      &kp LEFT_BRACE     &kp LEFT_BRACKET   &kp MINUS  &kp SLASH      &kp LEFT_PARENTHESIS   &kp APOS
-&kp PLUS   &kp GREATER_THAN  &kp PIPE      &kp SEMICOLON  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp UNDER  &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
-                                           &sl_hold 3 3   &trans             &trans             &trans
+&kp EXCL   &kp AT            &kp HASH      &kp DLLR       &kp PRCNT          &kp CARET          &kp AMPS      &kp ASTRK      &kp TILDE              &kp GRAVE
+&kp EQUAL  &kp LESS_THAN     &kp QUESTION  &kp COLON      &kp LEFT_BRACE     &kp LEFT_BRACKET   &kp MINUS     &kp SLASH      &kp LEFT_PARENTHESIS   &kp APOS
+&kp PLUS   &kp GREATER_THAN  &kp PIPE      &kp SEMICOLON  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &kp UNDER     &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
+                                           &trans         &trans             &trans             &sl_hold 3 3
             >;
         };
 
@@ -377,9 +377,9 @@
             display-name = "nav_num";
             bindings = <
 &kp LC(Q)       &kp LC(W)     &kp LG(TAB)     &trans           &kp LA(F4)          &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB             &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &kp LEFT_WIN
-&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &minimize_parsec    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp DOT
-                                              &mo 3            &trans              &trans     &kp N0
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB             &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
+&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &minimize_parsec    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
+                                              &trans           &trans              &trans     &trans
             >;
         };
 
