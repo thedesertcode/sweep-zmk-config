@@ -419,14 +419,14 @@
 &kp LC(Q)       &kp LC(W)     &kp LG(TAB)     &trans           &kp LA(F4)          &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB             &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &kp LEFT_WIN
 &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &minimize_parsec    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp DOT
-                                              &mo 3            &kp LEFT_SHIFT      &kp SPACE  &kp N0
+                                              &mo 3            &trans              &trans     &kp N0
             >;
         };
 
         fn {
             display-name = "fn";
             bindings = <
-&kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans      &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT            &kp LG(L)
+&kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans      &kp C_PREV         &kp C_PLAY_PAUSE  &kp C_NEXT            &trans
 &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans      &kp LEFT_SHIFT     &kp LCTRL         &kp LEFT_ALT          &kp LEFT_WIN
 &kp F10  &kp F1  &kp F2  &kp F3  &trans    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
                          &trans  &trans    &trans      &trans
@@ -436,10 +436,10 @@
         sys {
             display-name = "sys";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR     &trans       &trans  &trans  &trans  &trans
-&out OUT_USB  &out OUT_BLE  &trans        &trans        &trans         &trans       &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans         &trans       &trans  &trans  &trans  &trans
-                                          &soft_off     &bootloader    &bootloader  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR     &trans       &trans     &trans  &trans  &trans
+&out OUT_USB  &out OUT_BLE  &trans        &trans        &trans         &trans       &trans     &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans         &trans       &trans     &trans  &trans  &trans
+                                          &soft_off     &bootloader    &bootloader  &soft_off
             >;
         };
     };
