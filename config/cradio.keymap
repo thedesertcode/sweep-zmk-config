@@ -328,6 +328,11 @@
             key-positions = <0 3>;
             timeout-ms = <60>;
         };
+
+        combo_pscrn {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <4 0>;
+        };
     };
 
     macros {
