@@ -17,7 +17,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 &lt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <175>;
@@ -63,7 +63,7 @@
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <175>;
