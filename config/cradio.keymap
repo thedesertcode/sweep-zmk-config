@@ -122,7 +122,7 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 10>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <175>;
         };
 
@@ -143,7 +143,7 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <11 12>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <175>;
         };
 
@@ -278,35 +278,35 @@
         combo_ru_tz {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <15 32>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <175>;
         };
 
         combo_ru_j {
             bindings = <&kp SEMI>;
             key-positions = <17 32>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <175>;
         };
 
         combo_ru_x {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 32>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <175>;
         };
 
         combo_ru_e {
             bindings = <&kp APOSTROPHE>;
             key-positions = <18 32>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <175>;
         };
 
         combo_ru_yo {
             bindings = <&kp GRAVE>;
             key-positions = <19 32>;
-            timeout-ms = <60>;
+            timeout-ms = <80>;
             require-prior-idle-ms = <175>;
         };
 
