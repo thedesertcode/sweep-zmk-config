@@ -164,7 +164,7 @@
         combo_pgdn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <2 3>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <175>;
         };
 
