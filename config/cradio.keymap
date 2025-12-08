@@ -360,6 +360,13 @@
             timeout-ms = <60>;
             require-prior-idle-ms = <175>;
         };
+
+        combo_newtab {
+            bindings = <&kp LC(T)>;
+            key-positions = <0 1>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <175>;
+        };
     };
 
     macros {
