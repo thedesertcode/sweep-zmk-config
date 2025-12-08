@@ -370,14 +370,14 @@
 
         combo_closetab {
             bindings = <&kp LC(W)>;
-            key-positions = <2 0>;
+            key-positions = <21 31>;
             timeout-ms = <60>;
             require-prior-idle-ms = <175>;
         };
 
         combo_closewindow {
             bindings = <&kp LA(F4)>;
-            key-positions = <1 3>;
+            key-positions = <22 31>;
             timeout-ms = <60>;
             require-prior-idle-ms = <175>;
         };
@@ -393,6 +393,13 @@
             bindings = <&kp LC(LA(TAB))>;
             key-positions = <2 3>;
             timeout-ms = <25>;
+            require-prior-idle-ms = <175>;
+        };
+
+        combo_close-by-q {
+            bindings = <&kp LC(Q)>;
+            key-positions = <20 31>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <175>;
         };
     };
