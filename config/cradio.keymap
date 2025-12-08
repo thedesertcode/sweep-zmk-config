@@ -164,7 +164,7 @@
         combo_pgdn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <6 7>;
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <175>;
         };
 
@@ -356,7 +356,7 @@
 
         combo_pscrn {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <2 3>;
+            key-positions = <0 4>;
             timeout-ms = <60>;
             require-prior-idle-ms = <175>;
         };
@@ -365,6 +365,34 @@
             bindings = <&kp LC(T)>;
             key-positions = <0 1>;
             timeout-ms = <60>;
+            require-prior-idle-ms = <175>;
+        };
+
+        combo_closetab {
+            bindings = <&kp LC(W)>;
+            key-positions = <2 0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <175>;
+        };
+
+        combo_closewindow {
+            bindings = <&kp LA(F4)>;
+            key-positions = <1 3>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <175>;
+        };
+
+        combo_save {
+            bindings = <&kp LC(S)>;
+            key-positions = <26 27>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <175>;
+        };
+
+        combo_alt-tab {
+            bindings = <&kp LC(LA(TAB))>;
+            key-positions = <2 3>;
+            timeout-ms = <25>;
             require-prior-idle-ms = <175>;
         };
     };
@@ -410,8 +438,8 @@
         nav_num {
             display-name = "nav_num";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LG(TAB)     &trans           &kp LA(F4)          &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB             &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
+&trans          &trans        &trans          &trans           &trans              &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans              &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
 &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &minimize_parsec    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
                                               &sl_hold 3 3     &trans              &trans     &trans
             >;
