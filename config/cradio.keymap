@@ -122,8 +122,8 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 10>;
-            timeout-ms = <110>;
-            require-prior-idle-ms = <175>;
+            timeout-ms = <120>;
+            require-prior-idle-ms = <30>;
         };
 
         combo_delete {
@@ -144,7 +144,7 @@
             bindings = <&kp ENTER>;
             key-positions = <11 12>;
             timeout-ms = <100>;
-            require-prior-idle-ms = <175>;
+            require-prior-idle-ms = <30>;
         };
 
         combo_home {
