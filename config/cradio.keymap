@@ -438,7 +438,7 @@
 &kp EXCL       &kp AT                &kp HASH   &kp DLLR          &kp PRCNT         &kp CARET        &kp AMPS           &kp ASTRK      &kp TILDE              &kp GRAVE
 &kp QMARK      &kp APOSTROPHE        &kp COLON  &kp MINUS         &kp PLUS          &kp EQUAL        &kp UNDER          &kp SEMI       &kp DOUBLE_QUOTES      &kp PIPE
 &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp SLASH  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN
-                                                &trans            &trans            &trans           &trans
+                                                &sl_hold 3 3      &trans            &trans           &trans
             >;
         };
 
@@ -448,7 +448,7 @@
 &trans          &trans        &trans          &trans           &trans              &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans              &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
 &trans          &trans        &trans          &trans           &minimize_parsec    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
-                                              &sl_hold 3 3     &trans              &trans     &trans
+                                              &trans           &trans              &trans     &trans
             >;
         };
 
