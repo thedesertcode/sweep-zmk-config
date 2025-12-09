@@ -123,7 +123,7 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <11 10>;
             timeout-ms = <130>;
-            require-prior-idle-ms = <30>;
+            require-prior-idle-ms = <100>;
         };
 
         combo_delete {
