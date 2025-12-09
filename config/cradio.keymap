@@ -122,7 +122,7 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 10>;
-            timeout-ms = <100>;
+            timeout-ms = <110>;
             require-prior-idle-ms = <175>;
         };
 
@@ -136,7 +136,7 @@
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            timeout-ms = <40>;
+            timeout-ms = <20>;
             require-prior-idle-ms = <175>;
         };
 
@@ -343,7 +343,7 @@
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
-            timeout-ms = <60>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <175>;
         };
 
