@@ -122,7 +122,7 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 10>;
-            timeout-ms = <120>;
+            timeout-ms = <130>;
             require-prior-idle-ms = <30>;
         };
 
