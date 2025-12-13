@@ -278,36 +278,36 @@
         combo_ru_tz {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <15 32>;
-            timeout-ms = <90>;
-            require-prior-idle-ms = <250>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_ru_j {
             bindings = <&kp SEMI>;
             key-positions = <17 32>;
-            timeout-ms = <90>;
-            require-prior-idle-ms = <250>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_ru_x {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <16 32>;
-            timeout-ms = <90>;
-            require-prior-idle-ms = <250>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_ru_e {
             bindings = <&kp APOSTROPHE>;
             key-positions = <18 32>;
-            timeout-ms = <90>;
-            require-prior-idle-ms = <250>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_ru_yo {
             bindings = <&kp GRAVE>;
             key-positions = <19 32>;
-            timeout-ms = <90>;
-            require-prior-idle-ms = <250>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <50>;
         };
 
         combo_capslock {
