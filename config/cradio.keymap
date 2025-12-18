@@ -443,7 +443,7 @@
                 <&macro_press &kp TAB>,
                 <&macro_wait_time 200>,
                 <&macro_release &kp LEFT_ALT>,
-                <&macro_release &kp LCTRL>;
+                <&macro_release &kp LCTRL>,
                 <&macro_release &kp TAB>;
         };
     };
