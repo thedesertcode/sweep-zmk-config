@@ -17,10 +17,9 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30
 
 &lt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <250>;
+    flavor = "balanced";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <200>;
 };
 
 &sk {
@@ -63,10 +62,10 @@
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "tap-preferred";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            flavor = "balanced";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
@@ -79,9 +78,8 @@
             bindings = <&kp>, <&sk>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
             hold-trigger-on-release;
         };
@@ -92,9 +90,8 @@
             bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <200>;
             flavor = "balanced";
             hold-trigger-on-release;
         };
@@ -390,7 +387,7 @@
         };
 
         combo_alt-tab {
-            bindings = <&kp LC(LA(TAB))>;
+            bindings = <&macro_alt_tab>;
             key-positions = <2 3>;
             timeout-ms = <25>;
             require-prior-idle-ms = <250>;
@@ -423,6 +420,23 @@
                 <&kp LG(DOWN)>;
 
             label = "MINIMIZE_PARSEC";
+        };
+
+        macro_alt_tab: macro_alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 50>,
+                <&kp TAB>,
+                <&macro_wait_time 25>,
+                <&macro_release>,
+                <&kp LCTRL &kp LEFT_ALT &kp TAB>;
+
+            label = "MACRO_ALT_TAB";
         };
     };
 
