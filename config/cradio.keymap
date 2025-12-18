@@ -406,6 +406,13 @@
             require-prior-idle-ms = <250>;
             timeout-ms = <60>;
         };
+
+        combo_refresh-page {
+            bindings = <&kp F5>;
+            key-positions = <12 23>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <250>;
+        };
     };
 
     macros {
@@ -429,12 +436,18 @@
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_wait_time 50>,
+                <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 50>,
+                <&macro_press>,
                 <&kp TAB>,
                 <&macro_wait_time 25>,
                 <&macro_release>,
-                <&kp LCTRL &kp LEFT_ALT &kp TAB>;
+                <&kp LCTRL>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_release>,
+                <&kp TAB>;
 
             label = "MACRO_ALT_TAB";
         };
