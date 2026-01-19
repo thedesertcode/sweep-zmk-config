@@ -1,6 +1,4 @@
-
-
-TODO:
+**TODO**
 * Sort combos in config
 * Adjust latency
 * Update combos, make it more universal
@@ -39,8 +37,8 @@ Improvements:
 * Understand the behavior of Repeat key
 * Reduce number of layers and combine that have only few functioncs
 * Pin the layer keys to the opposite side of the holded finger for more move freedom. Because when hold the key and trying to press another key with the same hand, it feels more constrained
-* + добавить русские буквы
-* + добавить переключение в режим цифр на правой половинке
-* + добавить кнопку контекстного меню
-* + добавить кнопки регулировки яркости
-* + добавить кнопку soft_off в слое макро
+* добавить русские буквы
+* добавить переключение в режим цифр на правой половинке
+* добавить кнопку контекстного меню
+* добавить кнопки регулировки яркости
+* добавить кнопку soft_off в слое макро
