@@ -274,35 +274,35 @@
 
         combo_ru_tz {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <15 32>;
+            key-positions = <15 33>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         combo_ru_j {
             bindings = <&kp SEMI>;
-            key-positions = <17 32>;
+            key-positions = <17 33>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         combo_ru_x {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 32>;
+            key-positions = <16 33>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         combo_ru_e {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <18 32>;
+            key-positions = <18 33>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
 
         combo_ru_yo {
             bindings = <&kp GRAVE>;
-            key-positions = <19 32>;
+            key-positions = <19 33>;
             timeout-ms = <100>;
             require-prior-idle-ms = <50>;
         };
@@ -365,20 +365,6 @@
             require-prior-idle-ms = <250>;
         };
 
-        combo_closetab {
-            bindings = <&kp LC(W)>;
-            key-positions = <21 31>;
-            timeout-ms = <60>;
-            require-prior-idle-ms = <250>;
-        };
-
-        combo_closewindow {
-            bindings = <&kp LA(F4)>;
-            key-positions = <22 31>;
-            timeout-ms = <60>;
-            require-prior-idle-ms = <250>;
-        };
-
         combo_save {
             bindings = <&kp LC(S)>;
             key-positions = <21 23>;
@@ -390,13 +376,6 @@
             bindings = <&macro_alt_tab>;
             key-positions = <2 3>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
-        };
-
-        combo_close-by-q {
-            bindings = <&kp LC(Q)>;
-            key-positions = <20 31>;
-            timeout-ms = <60>;
             require-prior-idle-ms = <250>;
         };
 
@@ -436,15 +415,21 @@
             wait-ms = <0>;
             tap-ms = <25>;
             bindings =
-                <&macro_press &kp LCTRL>,
+                <&macro_press>,
+                <&kp LCTRL>,
                 <&macro_wait_time 50>,
-                <&macro_press &kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp LEFT_ALT>,
                 <&macro_wait_time 50>,
-                <&macro_press &kp TAB>,
+                <&macro_press>,
+                <&kp TAB>,
                 <&macro_wait_time 200>,
-                <&macro_release &kp LEFT_ALT>,
-                <&macro_release &kp LCTRL>,
-                <&macro_release &kp TAB>;
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_release>,
+                <&kp TAB>;
         };
     };
 
@@ -467,17 +452,17 @@
 &kp EXCL       &kp AT                &kp HASH   &kp DLLR          &kp PRCNT         &kp CARET        &kp AMPS           &kp ASTRK      &kp TILDE              &kp GRAVE
 &kp QMARK      &kp APOSTROPHE        &kp COLON  &kp MINUS         &kp PLUS          &kp EQUAL        &kp UNDER          &kp SEMI       &kp DOUBLE_QUOTES      &kp PIPE
 &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp SLASH  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN
-                                                &trans            &trans            &trans           &sl_hold 3 3
+                                                &trans            &trans            &sl_hold 3 3     &trans
             >;
         };
 
         nav_num {
             display-name = "nav_num";
             bindings = <
-&trans          &trans        &trans          &trans           &trans              &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans              &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
-&trans          &trans        &trans          &trans           &minimize_parsec    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
-                                              &kp LC(S)        &trans              &trans     &trans
+&trans          &trans        &kp LC(ENTER)   &kp LS(ENTER)    &trans       &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
+&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &trans           &soft_off    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
+                                              &trans           &trans       &trans     &trans
             >;
         };
 
