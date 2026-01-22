@@ -252,41 +252,6 @@
             require-prior-idle-ms = <250>;
         };
 
-        combo_ru_tz {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <15 33>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        combo_ru_j {
-            bindings = <&kp SEMI>;
-            key-positions = <17 33>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        combo_ru_x {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 33>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        combo_ru_e {
-            bindings = <&kp APOSTROPHE>;
-            key-positions = <18 33>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
-        combo_ru_yo {
-            bindings = <&kp GRAVE>;
-            key-positions = <19 33>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <50>;
-        };
-
         combo_capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <26 29>;
@@ -310,8 +275,8 @@
             require-prior-idle-ms = <250>;
         };
 
-        combo_ff_list_tabs {
-            bindings = <&kp LC(LS(TAB))>;
+        combo_edge_list_tabs {
+            bindings = <&kp LC(LS(A))>;
             key-positions = <12 21>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
@@ -439,10 +404,10 @@
         nav_num {
             display-name = "nav_num";
             bindings = <
-&kp LC(Q)       &kp LC(W)       &kp LA(F4)      &kp LS(ENTER)     &kp LC(ENTER)        &kp SLASH             &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
-&kp LEFT_ARROW  &kp UP_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp TAB              &kp PLUS              &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
-&kp GRAVE       &kp APOSTROPHE  &kp SEMICOLON   &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp MINUS             &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
-                                                &kp C_MUTE        &sl_hold 4 4         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&kp LC(Q)       &kp LC(W)     &kp LA(F4)      &kp LS(ENTER)    &kp LC(ENTER)    &kp SLASH             &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB          &kp PLUS              &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
+&trans          &trans        &trans          &trans           &trans           &kp MINUS             &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
+                                              &kp C_MUTE       &sl_hold 4 4     &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
             >;
         };
 
