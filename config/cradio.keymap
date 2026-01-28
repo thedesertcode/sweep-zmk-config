@@ -397,10 +397,10 @@
         nav_num {
             display-name = "nav_num";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LC(ENTER)   &kp LS(ENTER)    &kp LA(F4)      &kp SLASH             &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB         &kp PLUS              &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
-&trans          &trans        &trans          &trans           &trans          &kp MINUS             &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
-                                              &kp C_MUTE       &sl_hold 4 4    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+&kp LC(Q)       &kp LC(W)     &kp LC(ENTER)   &kp LS(ENTER)         &kp LA(F4)              &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp TAB                 &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
+&trans          &trans        &trans          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
+                                              &kp C_MUTE            &sl_hold 4 4            &trans     &trans
             >;
         };
 
