@@ -177,14 +177,14 @@
 
         combo_en_input {
             bindings = <&kp LC(LS(N1))>;
-            key-positions = <31 10>;
+            key-positions = <10 30>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
         };
 
         combo_ru_input {
             bindings = <&kp LC(LS(N2))>;
-            key-positions = <31 11>;
+            key-positions = <11 30>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
         };
@@ -322,13 +322,6 @@
             key-positions = <2 3>;
             timeout-ms = <25>;
             require-prior-idle-ms = <250>;
-        };
-
-        combo_shift-enter {
-            bindings = <&kp LS(ENTER)>;
-            key-positions = <11 13>;
-            require-prior-idle-ms = <250>;
-            timeout-ms = <60>;
         };
 
         combo_refresh-page {
