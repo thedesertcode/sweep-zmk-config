@@ -406,10 +406,10 @@
         nav_num {
             display-name = "nav_num";
             bindings = <
-&kp LC(Q)       &kp LC(W)     &kp LC(ENTER)   &kp LS(ENTER)         &kp LA(F4)              &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp TAB                 &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
-&trans          &trans        &trans          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
-                                              &kp C_MUTE            &sl_hold 4 4            &trans     &trans
+&kp LC(Q)       &kp LC(W)     &kp LC(ENTER)   &kp LS(ENTER)    &kp LA(F4)      &kp SLASH  &kp NUMBER_7             &kp NUMBER_8  &kp NUMBER_9           &kp ASTERISK
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp TAB         &kp PLUS   &ht LEFT_SHIFT NUMBER_4  &ht LCTRL N5  &ht LEFT_ALT NUMBER_6  &ht LEFT_WIN DOT
+&mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans          &kp MINUS  &kp NUMBER_1             &kp NUMBER_2  &kp NUMBER_3           &kp N0
+                                              &kp C_MUTE       &sl_hold 4 4    &trans     &trans
             >;
         };
 
@@ -426,10 +426,10 @@
         sys {
             display-name = "sys";
             bindings = <
-&trans          &trans        &trans          &trans           &bootloader    &bootloader     &trans         &trans         &trans         &trans
-&mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans         &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_CLR
-&mkp RCLK       &msc SCRL_UP  &msc SCRL_DOWN  &mkp LCLK        &trans         &bt BT_PRV      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_NXT
-                                              &soft_off        &trans         &out OUT_USB    &out OUT_BLE
+&trans  &trans  &trans  &trans     &bootloader    &bootloader     &trans         &trans         &trans         &trans
+&trans  &trans  &trans  &trans     &trans         &bt BT_CLR_ALL  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_CLR
+&trans  &trans  &trans  &trans     &trans         &bt BT_PRV      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_NXT
+                        &soft_off  &trans         &out OUT_USB    &out OUT_BLE
             >;
         };
     };
