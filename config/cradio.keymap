@@ -284,13 +284,6 @@
             require-prior-idle-ms = <250>;
         };
 
-        combo_edge_list_tabs {
-            bindings = <&kp LC(LS(A))>;
-            key-positions = <12 21>;
-            timeout-ms = <60>;
-            require-prior-idle-ms = <250>;
-        };
-
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <12 13>;
