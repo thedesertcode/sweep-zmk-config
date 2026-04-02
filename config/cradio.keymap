@@ -325,7 +325,7 @@
             bindings = <
 &kp LC(LS(F12))  &trans         &kp LC(LS(F11))  &trans         &trans        &kp KP_DIVIDE    &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9     &kp KP_MULTIPLY
 &kp LEFT_ARROW   &kp UP_ARROW   &kp DOWN         &kp RIGHT      &sl 3         &kp KP_PLUS      &ht LEFT_SHIFT N4  &ht LCTRL N5  &ht LEFT_ALT N6  &ht LEFT_WIN KP_DOT
-&trans           &kp LA(ENTER)  &kp LC(ENTER)    &kp LS(ENTER)  &kp LA(F4)    &kp KP_SUBTRACT  &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3     &trans
+&tog 4           &kp LA(ENTER)  &kp LC(ENTER)    &kp LS(ENTER)  &kp LA(F4)    &kp KP_SUBTRACT  &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3     &trans
                                                  &trans         &trans        &kp N0           &kp SPACE
             >;
         };
