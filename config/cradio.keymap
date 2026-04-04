@@ -76,49 +76,49 @@
         combo_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 10>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <200>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <250>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
             key-positions = <13 10>;
-            timeout-ms = <60>;
+            timeout-ms = <100>;
             require-prior-idle-ms = <250>;
         };
 
         combo_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
-            timeout-ms = <20>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <250>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <11 12>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <30>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
         };
 
         combo_home {
             bindings = <&kp HOME>;
             key-positions = <7 8>;
-            timeout-ms = <60>;
+            timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
 
         combo_pgup {
             bindings = <&kp PAGE_UP>;
             key-positions = <7 6>;
-            timeout-ms = <60>;
+            timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
 
         combo_pgdn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <8 9>;
-            timeout-ms = <60>;
+            timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
 
@@ -139,7 +139,7 @@
         combo_copy {
             bindings = <&kp LC(C)>;
             key-positions = <21 22>;
-            timeout-ms = <60>;
+            timeout-ms = <150>;
             layers = <0>;
             require-prior-idle-ms = <250>;
         };
@@ -147,7 +147,7 @@
         combo_paste {
             bindings = <&kp LC(V)>;
             key-positions = <22 23>;
-            timeout-ms = <60>;
+            timeout-ms = <150>;
             layers = <0>;
             require-prior-idle-ms = <250>;
         };
@@ -239,7 +239,7 @@
         combo_term_copy {
             bindings = <&kp LC(LS(C))>;
             key-positions = <21 22>;
-            timeout-ms = <60>;
+            timeout-ms = <150>;
             layers = <1>;
             require-prior-idle-ms = <250>;
         };
@@ -248,7 +248,7 @@
             bindings = <&kp LC(LS(V))>;
             key-positions = <22 23>;
             layers = <1>;
-            timeout-ms = <60>;
+            timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
 
