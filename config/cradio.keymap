@@ -66,7 +66,14 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        test {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 
     combos {
         compatible = "zmk,combos";
@@ -323,10 +330,10 @@
         nav_num {
             display-name = "nav_num";
             bindings = <
-&kp LC(LS(F12))  &kp LC(LS(LA(F10)))  &kp LC(LS(F11))  &trans         &trans        &kp KP_DIVIDE    &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9     &kp KP_MULTIPLY
-&kp LEFT_ARROW   &kp UP_ARROW         &kp DOWN         &kp RIGHT      &sl 3         &kp KP_PLUS      &ht LEFT_SHIFT N4  &ht LCTRL N5  &ht LEFT_ALT N6  &ht LEFT_WIN KP_DOT
-&tog 4           &kp LA(ENTER)        &kp LC(ENTER)    &kp LS(ENTER)  &kp LA(F4)    &kp KP_SUBTRACT  &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3     &trans
-                                                       &trans         &trans        &kp N0           &kp SPACE
+&kp NUMBER_1    &kp N2        &kp N3    &kp N4       &kp N5    &kp N6           &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9     &kp N0
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN  &kp RIGHT    &sl 3     &kp KP_PLUS      &ht LEFT_SHIFT N4  &ht LCTRL N5  &ht LEFT_ALT N6  &ht LEFT_WIN KP_DOT
+&tog 4          &trans        &trans    &trans       &trans    &kp KP_SUBTRACT  &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3     &trans
+                                        &key_repeat  &trans    &kp N0           &kp SPACE
             >;
         };
 
@@ -336,7 +343,7 @@
 &kp EXCL       &kp AT                &kp HASH   &kp DLLR          &kp PRCNT         &kp CARET        &kp AMPS           &kp ASTRK      &kp TILDE              &kp GRAVE
 &kp QMARK      &kp APOSTROPHE        &kp COLON  &kp MINUS         &kp PLUS          &kp EQUAL        &kp UNDER          &kp SEMI       &kp DOUBLE_QUOTES      &kp PIPE
 &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp SLASH  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN
-                                                &trans            &kp TAB           &trans           &trans
+                                                &trans            &trans            &trans           &trans
             >;
         };
 
