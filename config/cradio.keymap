@@ -318,7 +318,7 @@
             bindings = <
 &kp NUMBER_1    &kp N2        &kp N3         &kp N4     &kp N5             &kp N6           &kp NUMBER_7            &kp NUMBER_8          &kp NUMBER_9              &kp N0
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN       &kp RIGHT  &kp DELETE         &tog 4           &ht LEFT_SHIFT KP_PLUS  &ht LCTRL KP_MINUS    &ht LEFT_ALT KP_MULTIPLY  &ht LEFT_WIN KP_DIVIDE
-&kp ESCAPE      &kp PG_UP     &kp PAGE_DOWN  &kp TAB    &kp INS            &kp LC(LS(F12))  &kp LC(LS(N1))          &kp LC(LS(NUMBER_2))  &kp DOT                   &trans
+&kp ESCAPE      &kp PG_UP     &kp PAGE_DOWN  &kp TAB    &kp INS            &kp LC(LS(F12))  &kp LC(LS(N1))          &kp LC(LS(NUMBER_2))  &kp KP_DOT                &trans
                                              &kp HOME   &kp PRINTSCREEN    &trans           &trans
             >;
         };
