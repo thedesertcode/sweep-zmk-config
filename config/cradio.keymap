@@ -306,10 +306,10 @@
         base {
             display-name = "base";
             bindings = <
-&kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y           &kp U              &kp I        &kp O            &kp P
-&ht LEFT_WIN A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G        &kp H           &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RIGHT_ALT L  &ht RIGHT_WIN BACKSPACE
-&kp Z           &kp X           &kp C        &kp V             &kp B        &kp N           &kp M              &kp COMMA    &kp DOT          &kp ENTER
-                                             &sl 1             &kp SPACE    &sk LEFT_SHIFT  &sl 2
+&kp Q           &kp W           &kp E        &kp R             &kp T             &kp Y      &kp U              &kp I        &kp O            &kp P
+&ht LEFT_WIN A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &kp G             &kp H      &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RIGHT_ALT L  &ht RIGHT_WIN BACKSPACE
+&kp Z           &kp X           &kp C        &kp V             &kp B             &kp N      &kp M              &kp COMMA    &kp DOT          &kp ENTER
+                                             &sl 1             &sk LEFT_SHIFT    &kp SPACE  &sl 2
             >;
         };
 
@@ -319,7 +319,7 @@
 &kp NUMBER_1    &kp N2        &kp N3         &kp N4     &kp N5             &kp N6           &kp NUMBER_7            &kp NUMBER_8          &kp NUMBER_9              &kp N0
 &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN       &kp RIGHT  &kp DELETE         &tog 4           &ht LEFT_SHIFT KP_PLUS  &ht LCTRL KP_MINUS    &ht LEFT_ALT KP_MULTIPLY  &ht LEFT_WIN KP_DIVIDE
 &kp ESCAPE      &kp PG_UP     &kp PAGE_DOWN  &kp TAB    &kp INS            &kp LC(LS(F12))  &kp LC(LS(N1))          &kp LC(LS(NUMBER_2))  &kp DOT                   &trans
-                                             &kp HOME   &kp PRINTSCREEN    &kp SPACE        &trans
+                                             &kp HOME   &kp PRINTSCREEN    &trans           &trans
             >;
         };
 
