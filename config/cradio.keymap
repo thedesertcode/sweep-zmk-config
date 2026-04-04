@@ -75,21 +75,21 @@
 
         combo_backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <11 10>;
+            key-positions = <>;
             timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
 
         combo_delete {
             bindings = <&kp DELETE>;
-            key-positions = <13 10>;
+            key-positions = <>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
         };
 
         combo_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 2>;
+            key-positions = <>;
             timeout-ms = <40>;
             require-prior-idle-ms = <250>;
         };
@@ -122,13 +122,6 @@
             require-prior-idle-ms = <250>;
         };
 
-        combo_end {
-            bindings = <&kp END>;
-            key-positions = <6 9>;
-            timeout-ms = <60>;
-            require-prior-idle-ms = <250>;
-        };
-
         combo_cut {
             bindings = <&kp LC(X)>;
             key-positions = <20 21>;
@@ -154,14 +147,14 @@
 
         combo_en_input {
             bindings = <&kp LC(LS(N1))>;
-            key-positions = <10 30>;
+            key-positions = <>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
         };
 
         combo_ru_input {
             bindings = <&kp LC(LS(N2))>;
-            key-positions = <11 30>;
+            key-positions = <>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
         };
@@ -231,7 +224,7 @@
 
         combo_capslock {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <26 29>;
+            key-positions = <29 26>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
         };
@@ -254,21 +247,21 @@
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <12 13>;
+            key-positions = <>;
             timeout-ms = <30>;
             require-prior-idle-ms = <150>;
         };
 
         combo_insert {
             bindings = <&kp INSERT>;
-            key-positions = <5 9>;
+            key-positions = <12 13>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
         };
 
         combo_pscrn {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <0 4>;
+            key-positions = <>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
         };
@@ -303,7 +296,7 @@
 
         combo_to_base {
             bindings = <&to 0>;
-            key-positions = <11 13>;
+            key-positions = <>;
         };
     };
 
@@ -323,10 +316,10 @@
         nav_num {
             display-name = "nav_num";
             bindings = <
-&kp NUMBER_1    &kp N2        &kp N3         &kp N4     &kp N5        &kp N6    &kp NUMBER_7            &kp NUMBER_8        &kp NUMBER_9              &kp N0
-&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN       &kp RIGHT  &sl 3         &sl 4     &ht LEFT_SHIFT KP_PLUS  &ht LCTRL KP_MINUS  &ht LEFT_ALT KP_MULTIPLY  &ht LEFT_WIN KP_DIVIDE
-&kp ESCAPE      &kp PG_UP     &kp PAGE_DOWN  &kp TAB    &kp DELETE    &trans    &trans                  &trans              &trans                    &tog 4
-                                             &trans     &trans        &kp HOME  &kp END
+&kp NUMBER_1    &kp N2        &kp N3         &kp N4     &kp N5             &kp N6    &kp NUMBER_7            &kp NUMBER_8          &kp NUMBER_9              &kp N0
+&kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN       &kp RIGHT  &sl 3              &tog 4    &ht LEFT_SHIFT KP_PLUS  &ht LCTRL KP_MINUS    &ht LEFT_ALT KP_MULTIPLY  &ht LEFT_WIN KP_DIVIDE
+&kp ESCAPE      &kp PG_UP     &kp PAGE_DOWN  &kp TAB    &kp DELETE         &trans    &kp LC(LS(N1))          &kp LC(LS(NUMBER_2))  &trans                    &kp INSERT
+                                             &trans     &kp PRINTSCREEN    &kp HOME  &kp END
             >;
         };
 
@@ -343,10 +336,10 @@
         fn {
             display-name = "fn";
             bindings = <
-&kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &trans          &trans    &kp C_BRIGHTNESS_INC  &kp F7  &kp F8  &kp F9  &kp F12
-&kp LEFT_WIN       &kp LEFT_ALT     &kp LCTRL         &kp LEFT_SHIFT  &trans    &kp C_BRIGHTNESS_DEC  &kp F4  &kp F5  &kp F6  &kp F11
-&kp C_MUTE         &kp C_PREV       &kp C_NEXT        &trans          &trans    &trans                &kp F1  &kp F2  &kp F3  &kp F10
-                                                      &sl 4           &trans    &trans                &trans
+&kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &trans          &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F12
+&kp LEFT_WIN       &kp LEFT_ALT     &kp LCTRL         &kp LEFT_SHIFT  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&kp C_MUTE         &kp C_PREV       &kp C_NEXT        &trans          &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10
+                                                      &sl 4           &trans    &trans  &trans
             >;
         };
 
