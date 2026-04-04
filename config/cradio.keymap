@@ -103,21 +103,21 @@
 
         combo_home {
             bindings = <&kp HOME>;
-            key-positions = <7 8>;
+            key-positions = <>;
             timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
 
         combo_pgup {
             bindings = <&kp PAGE_UP>;
-            key-positions = <7 6>;
+            key-positions = <>;
             timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
 
         combo_pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <8 9>;
+            key-positions = <>;
             timeout-ms = <150>;
             require-prior-idle-ms = <250>;
         };
@@ -329,7 +329,7 @@
 &kp EXCL       &kp AT                &kp HASH   &kp DLLR          &kp PRCNT         &kp CARET        &kp AMPS           &kp ASTRK      &kp GRAVE              &kp TILDE
 &kp QMARK      &kp APOSTROPHE        &kp COLON  &kp MINUS         &kp PLUS          &kp EQUAL        &kp UNDER          &kp SEMI       &kp DOUBLE_QUOTES      &kp PIPE
 &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp SLASH  &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN
-                                                &trans            &trans            &trans           &trans
+                                                &trans            &key_repeat       &caps_word       &trans
             >;
         };
 
