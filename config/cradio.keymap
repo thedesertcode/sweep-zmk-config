@@ -200,12 +200,12 @@
             layers = <1>;
         };
 
-        combo_mouse_tog {
+        combo_tog_mouse {
             bindings = <&tog 4>;
             key-positions = <1 2>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         combo_tab {
