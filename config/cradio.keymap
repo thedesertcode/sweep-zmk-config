@@ -82,7 +82,7 @@
 
         combo_backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <10 11>;
+            key-positions = <13 12>;
             timeout-ms = <150>;
             require-prior-idle-ms = <250>;
             layers = <0>;
@@ -90,7 +90,7 @@
 
         combo_delete {
             bindings = <&kp DELETE>;
-            key-positions = <12 13>;
+            key-positions = <10 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
             layers = <0>;
@@ -98,7 +98,7 @@
 
         combo_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <1 0>;
             timeout-ms = <40>;
             require-prior-idle-ms = <250>;
             layers = <0>;
@@ -170,7 +170,7 @@
 
         combo_newtab {
             bindings = <&kp LC(T)>;
-            key-positions = <0 1>;
+            key-positions = <2 3 0 1>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
             layers = <1>;
@@ -178,7 +178,7 @@
 
         combo_save {
             bindings = <&kp LC(S)>;
-            key-positions = <12 11>;
+            key-positions = <10 11>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
             layers = <1>;
@@ -194,7 +194,7 @@
 
         combo_refresh-page {
             bindings = <&kp F5>;
-            key-positions = <1 2>;
+            key-positions = <0 3>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
             layers = <1>;
@@ -205,22 +205,28 @@
             key-positions = <1 2>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
+            layers = <0>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
             layers = <1>;
         };
 
-        combo_alt_tab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <12 13>;
+        combo_switch_tab {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <1 2>;
+        };
+
+        combo_space {
+            bindings = <&kp SPACE>;
+            key-positions = <2 3>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
-            layers = <1>;
+            layers = <0>;
         };
     };
 
