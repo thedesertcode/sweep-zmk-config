@@ -219,12 +219,15 @@
         combo_switch_tab {
             bindings = <&kp LC(TAB)>;
             key-positions = <1 2>;
+            layers = <1>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <250>;
         };
 
         combo_space {
             bindings = <&kp SPACE>;
             key-positions = <2 3>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             require-prior-idle-ms = <250>;
             layers = <0>;
         };
