@@ -131,7 +131,7 @@
         combo_paste {
             bindings = <&kp LC(V)>;
             key-positions = <22 23>;
-            timeout-ms = <100>;
+            timeout-ms = <60>;
             layers = <0>;
             require-prior-idle-ms = <250>;
         };
