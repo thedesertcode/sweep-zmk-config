@@ -170,7 +170,7 @@
 
         combo_newtab {
             bindings = <&kp LC(T)>;
-            key-positions = <2 3 0 1>;
+            key-positions = <0 1>;
             timeout-ms = <100>;
             require-prior-idle-ms = <250>;
             layers = <1>;
