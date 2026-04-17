@@ -106,7 +106,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -202,8 +202,8 @@
 
         combo_tog_mouse {
             bindings = <&tog 4>;
-            key-positions = <1 2>;
-            timeout-ms = <100>;
+            key-positions = <12 11>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <250>;
             layers = <0 4>;
         };
@@ -279,9 +279,9 @@
         sys {
             display-name = "sys";
             bindings = <
-&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans         &trans       &trans     &trans     &trans     &trans
-&mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &soft_off      &trans       &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&to 0           &mkp RCLK     &mkp MCLK       &mkp LCLK        &bootloader    &bootloader  &trans     &trans     &trans     &trans
+&msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans         &trans       &kp HOME   &msc SCRL_DOWN  &msc SCRL_UP  &kp END
+&mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &soft_off      &trans       &mkp LCLK  &mkp MCLK       &mkp RCLK     &trans
+&to 0           &mkp RCLK     &mkp MCLK       &mkp LCLK        &bootloader    &bootloader  &trans     &trans          &trans        &to 0
                                               &trans           &trans         &trans       &trans
             >;
         };
