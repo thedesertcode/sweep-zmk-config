@@ -16,8 +16,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // cursor and scroll speed
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 60
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2500
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // Global settings for behaviors
 &soft_off {
@@ -25,13 +25,13 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <500>;     // longer = slower to reach full speed
-    acceleration-exponent = <1>;      // 0 = constant speed (no acceleration)
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <2>;
 };
 
 &msc {
-    time-to-max-speed-ms = <500>;         // Slightly faster ramp for scroll (feels more natural)
-    acceleration-exponent = <1>;          // Same smooth-to-fast curve as cursor
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <2>;
 };
 
 &sk {
