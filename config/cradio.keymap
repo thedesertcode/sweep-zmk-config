@@ -337,7 +337,7 @@
             layers = <0>;
         };
 
-        combo_key_tab {
+        combo_key_tab_base {
             bindings = <&kp TAB>;
             key-positions = <1 2>;
             timeout-ms = <40>;
