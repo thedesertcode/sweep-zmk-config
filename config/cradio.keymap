@@ -103,7 +103,7 @@
         combo_key_space {
             bindings = <&kp SPACE>;
             key-positions = <2 3>;
-            timeout-ms = <60>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <250>;
             layers = <0>;
         };
@@ -111,7 +111,7 @@
         combo_key_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <13 12>;
-            timeout-ms = <150>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <250>;
             layers = <0>;
         };
@@ -119,7 +119,7 @@
         combo_key_delete {
             bindings = <&kp DELETE>;
             key-positions = <10 11>;
-            timeout-ms = <100>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <250>;
             layers = <0>;
         };
@@ -127,7 +127,7 @@
         combo_key_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <250>;
             layers = <0>;
         };
@@ -217,7 +217,7 @@
         combo_tab_new {
             bindings = <&kp LC(T)>;
             key-positions = <0 1>;
-            timeout-ms = <60>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <250>;
             layers = <1>;
         };
@@ -225,7 +225,7 @@
         combo_tab_close {
             bindings = <&kp LC(W)>;
             key-positions = <2 3>;
-            timeout-ms = <40>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <250>;
             layers = <1>;
         };
@@ -233,7 +233,7 @@
         combo_tab_refresh {
             bindings = <&kp F5>;
             key-positions = <0 3>;
-            timeout-ms = <60>;
+            timeout-ms = <50>;
             require-prior-idle-ms = <250>;
             layers = <1>;
         };
@@ -241,7 +241,7 @@
         combo_space {
             bindings = <&kp SPACE>;
             key-positions = <2 3>;
-            timeout-ms = <60>;
+            timeout-ms = <30>;
             require-prior-idle-ms = <250>;
             layers = <0>;
         };
