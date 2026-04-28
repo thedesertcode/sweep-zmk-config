@@ -99,8 +99,16 @@
     combos {
         compatible = "zmk,combos";
 
-        // Commands
-        combo_backspace {
+        // Single keys
+        combo_key_space {
+            bindings = <&kp SPACE>;
+            key-positions = <2 3>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <250>;
+            layers = <0>;
+        };
+
+        combo_key_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <13 12>;
             timeout-ms = <150>;
@@ -108,7 +116,7 @@
             layers = <0>;
         };
 
-        combo_delete {
+        combo_key_delete {
             bindings = <&kp DELETE>;
             key-positions = <10 11>;
             timeout-ms = <100>;
@@ -116,7 +124,7 @@
             layers = <0>;
         };
 
-        combo_esc {
+        combo_key_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
             timeout-ms = <40>;
@@ -124,7 +132,7 @@
             layers = <0>;
         };
 
-        combo_enter {
+        combo_key_enter {
             bindings = <&kp ENTER>;
             key-positions = <11 12>;
             timeout-ms = <50>;
@@ -132,6 +140,23 @@
             layers = <0>;
         };
 
+        combo_key_tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <250>;
+            layers = <1>;
+        };
+
+        combo_key_pscrn {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <10 13>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <250>;
+            layers = <1>;
+        };
+
+        // Text manage
         combo_cut {
             bindings = <&kp LC(X)>;
             key-positions = <20 21>;
@@ -164,6 +189,14 @@
             layers = <0>;
         };
 
+        combo_save {
+            bindings = <&kp LC(S)>;
+            key-positions = <10 11>;
+            timeout-ms = <100>;
+            require-prior-idle-ms = <250>;
+            layers = <1>;
+        };
+
         combo_term_copy {
             bindings = <&kp LC(LS(C))>;
             key-positions = <21 22>;
@@ -180,15 +213,8 @@
             require-prior-idle-ms = <250>;
         };
 
-        combo_pscrn {
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <10 13>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <250>;
-            layers = <1>;
-        };
-
-        combo_newtab {
+        // Tab manage
+        combo_tab_new {
             bindings = <&kp LC(T)>;
             key-positions = <0 1>;
             timeout-ms = <60>;
@@ -196,52 +222,20 @@
             layers = <1>;
         };
 
-        combo_save {
-            bindings = <&kp LC(S)>;
-            key-positions = <10 11>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <250>;
-            layers = <1>;
-        };
-
-        combo_closetab {
+        combo_tab_close {
             bindings = <&kp LC(W)>;
             key-positions = <2 3>;
-            timeout-ms = <60>;
+            timeout-ms = <40>;
             require-prior-idle-ms = <250>;
             layers = <1>;
         };
 
-        combo_refresh-page {
+        combo_tab_refresh {
             bindings = <&kp F5>;
             key-positions = <0 3>;
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
             layers = <1>;
-        };
-
-        combo_tog_mouse {
-            bindings = <&tog 4>;
-            key-positions = <17 18>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <250>;
-            layers = <0 4>;
-        };
-
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <250>;
-            layers = <1>;
-        };
-
-        combo_switch_tab {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <1 2>;
-            layers = <1>;
-            timeout-ms = <100>;
-            require-prior-idle-ms = <250>;
         };
 
         combo_space {
@@ -250,6 +244,15 @@
             timeout-ms = <60>;
             require-prior-idle-ms = <250>;
             layers = <0>;
+        };
+
+        // Mouse manage
+        combo_mouse_layer_toggle {
+            bindings = <&tog 4>;
+            key-positions = <17 18>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <250>;
+            layers = <0 4>;
         };
     };
 
